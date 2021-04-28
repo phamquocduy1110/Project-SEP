@@ -1,0 +1,40 @@
+D:\Project-SEP\Project SEP\Project SEP\bin\Debug\net5.0\appsettings.Development.json
+D:\Project-SEP\Project SEP\Project SEP\bin\Debug\net5.0\appsettings.json
+D:\Project-SEP\Project SEP\Project SEP\bin\Debug\net5.0\Project SEP.exe
+D:\Project-SEP\Project SEP\Project SEP\bin\Debug\net5.0\Project SEP.deps.json
+D:\Project-SEP\Project SEP\Project SEP\bin\Debug\net5.0\Project SEP.runtimeconfig.json
+D:\Project-SEP\Project SEP\Project SEP\bin\Debug\net5.0\Project SEP.runtimeconfig.dev.json
+D:\Project-SEP\Project SEP\Project SEP\bin\Debug\net5.0\Project SEP.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\Debug\net5.0\ref\Project SEP.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\Debug\net5.0\Project SEP.pdb
+D:\Project-SEP\Project SEP\Project SEP\bin\Debug\net5.0\Project SEP.Views.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\Debug\net5.0\Project SEP.Views.pdb
+D:\Project-SEP\Project SEP\Project SEP\obj\Debug\net5.0\Project SEP.csprojAssemblyReference.cache
+D:\Project-SEP\Project SEP\Project SEP\obj\Debug\net5.0\Project SEP.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project-SEP\Project SEP\Project SEP\obj\Debug\net5.0\Project SEP.AssemblyInfoInputs.cache
+D:\Project-SEP\Project SEP\Project SEP\obj\Debug\net5.0\Project SEP.AssemblyInfo.cs
+D:\Project-SEP\Project SEP\Project SEP\obj\Debug\net5.0\Project SEP.csproj.CoreCompileInputs.cache
+D:\Project-SEP\Project SEP\Project SEP\obj\Debug\net5.0\Project SEP.MvcApplicationPartsAssemblyInfo.cache
+D:\Project-SEP\Project SEP\Project SEP\obj\Debug\net5.0\Project SEP.RazorAssemblyInfo.cache
+D:\Project-SEP\Project SEP\Project SEP\obj\Debug\net5.0\Project SEP.RazorAssemblyInfo.cs
+D:\Project-SEP\Project SEP\Project SEP\obj\Debug\net5.0\staticwebassets\Project SEP.StaticWebAssets.Manifest.cache
+D:\Project-SEP\Project SEP\Project SEP\obj\Debug\net5.0\staticwebassets\Project SEP.StaticWebAssets.xml
+D:\Project-SEP\Project SEP\Project SEP\obj\Debug\net5.0\scopedcss\bundle\Project SEP.styles.css
+D:\Project-SEP\Project SEP\Project SEP\obj\Debug\net5.0\Project SEP.TagHelpers.input.cache
+D:\Project-SEP\Project SEP\Project SEP\obj\Debug\net5.0\Project SEP.TagHelpers.output.cache
+D:\Project-SEP\Project SEP\Project SEP\obj\Debug\net5.0\Project SEP.RazorCoreGenerate.cache
+D:\Project-SEP\Project SEP\Project SEP\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+D:\Project-SEP\Project SEP\Project SEP\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\Project-SEP\Project SEP\Project SEP\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+D:\Project-SEP\Project SEP\Project SEP\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\Project-SEP\Project SEP\Project SEP\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\Project-SEP\Project SEP\Project SEP\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Project-SEP\Project SEP\Project SEP\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+D:\Project-SEP\Project SEP\Project SEP\obj\Debug\net5.0\Project SEP.RazorTargetAssemblyInfo.cache
+D:\Project-SEP\Project SEP\Project SEP\obj\Debug\net5.0\Project SEP.RazorTargetAssemblyInfo.cs
+D:\Project-SEP\Project SEP\Project SEP\obj\Debug\net5.0\Project SEP.Views.pdb
+D:\Project-SEP\Project SEP\Project SEP\obj\Debug\net5.0\Project SEP.dll
+D:\Project-SEP\Project SEP\Project SEP\obj\Debug\net5.0\ref\Project SEP.dll
+D:\Project-SEP\Project SEP\Project SEP\obj\Debug\net5.0\Project SEP.pdb
+D:\Project-SEP\Project SEP\Project SEP\obj\Debug\net5.0\Project SEP.genruntimeconfig.cache
+D:\Project-SEP\Project SEP\Project SEP\obj\Debug\net5.0\Project SEP.csproj.CopyComplete
