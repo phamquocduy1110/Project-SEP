@@ -16,7 +16,7 @@ namespace Project_SEP_Web_Application
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Shared", action = "_Layout", id = UrlParameter.Optional }
             );
         }
     }

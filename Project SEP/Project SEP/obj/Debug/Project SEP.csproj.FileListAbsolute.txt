@@ -1,0 +1,79 @@
+D:\Project-SEP\Project SEP\Project SEP\bin\Project SEP.dll.config
+D:\Project-SEP\Project SEP\Project SEP\bin\Project SEP.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\Project SEP.pdb
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\csc.exe
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\csc.exe.config
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\csc.rsp
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\csi.exe
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\csi.exe.config
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\csi.rsp
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\System.AppContext.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\System.Collections.Immutable.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\System.Console.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\System.Globalization.Calendars.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\System.IO.Compression.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\System.IO.FileSystem.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\System.Net.Http.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\System.Net.Sockets.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\System.Reflection.Metadata.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\System.ValueTuple.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\System.Xml.XPath.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\vbc.exe
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\vbc.exe.config
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\vbc.rsp
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\VBCSCompiler.exe
+D:\Project-SEP\Project SEP\Project SEP\bin\roslyn\VBCSCompiler.exe.config
+D:\Project-SEP\Project SEP\Project SEP\bin\Antlr3.Runtime.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\Microsoft.Web.Infrastructure.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\Newtonsoft.Json.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\System.Web.Helpers.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\System.Web.Mvc.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\System.Web.Optimization.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\System.Web.Razor.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\System.Web.WebPages.Deployment.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\System.Web.WebPages.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\System.Web.WebPages.Razor.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\WebGrease.dll
+D:\Project-SEP\Project SEP\Project SEP\bin\System.Web.Helpers.xml
+D:\Project-SEP\Project SEP\Project SEP\bin\System.Web.Mvc.xml
+D:\Project-SEP\Project SEP\Project SEP\bin\System.Web.Optimization.xml
+D:\Project-SEP\Project SEP\Project SEP\bin\System.Web.Razor.xml
+D:\Project-SEP\Project SEP\Project SEP\bin\System.Web.WebPages.xml
+D:\Project-SEP\Project SEP\Project SEP\bin\System.Web.WebPages.Deployment.xml
+D:\Project-SEP\Project SEP\Project SEP\bin\System.Web.WebPages.Razor.xml
+D:\Project-SEP\Project SEP\Project SEP\bin\Newtonsoft.Json.xml
+D:\Project-SEP\Project SEP\Project SEP\bin\Antlr3.Runtime.pdb
+D:\Project-SEP\Project SEP\Project SEP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Project-SEP\Project SEP\Project SEP\obj\Debug\Project SEP.csprojAssemblyReference.cache
+D:\Project-SEP\Project SEP\Project SEP\obj\Debug\Project SEP.csproj.CoreCompileInputs.cache
+D:\Project-SEP\Project SEP\Project SEP\obj\Debug\Project SEP.csproj.CopyComplete
+D:\Project-SEP\Project SEP\Project SEP\obj\Debug\Project SEP.dll
+D:\Project-SEP\Project SEP\Project SEP\obj\Debug\Project SEP.pdb
