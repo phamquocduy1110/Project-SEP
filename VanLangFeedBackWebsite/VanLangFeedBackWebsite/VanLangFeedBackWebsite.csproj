@@ -173,9 +173,12 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\css\all.min.css" />
+    <Content Include="Assets\css\topmenu.css" />
     <Content Include="Assets\css\bootstrap.min.css" />
+    <Content Include="Assets\css\fontawesome-all.min.css" />
     <Content Include="Assets\css\fonts.css" />
+    <Content Include="Assets\css\framework.css" />
+    <Content Include="Assets\css\layout.css" />
     <Content Include="Assets\css\partials\_global.css" />
     <Content Include="Assets\css\partials\_variables.css" />
     <Content Include="Assets\css\responsive.css" />
