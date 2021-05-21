@@ -1,62 +1,106 @@
-﻿<!DOCTYPE html>
+﻿<!DOCTYPE HTML>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>Responsive Nav Manu Using HTML & CSS</title>
 
-    <link rel="stylesheet" href="@Url.Content("~/Assets/css/topmenu.css")">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Concerted Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="applijewelleryion/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+    <link href="@Url.Content("~/Assets/css/bootstrap.css")" rel='stylesheet' type='text/css' />
+    <!-- Custom Theme files -->
+    <link href='//fonts.googleapis.com/css?family=Viga' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="@Url.Content("~/Assets/css/style.css")" rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="@Url.Content("~/Assets/css/flexslider.css")" type="text/css" media="screen" />
+    <link rel="stylesheet" href="@Url.Content("~/Assets/css/chocolat.css")" type="text/css" media="all" />
+    <link href="@Url.Content("~/Assets/css/animate.min.css")" rel="stylesheet">
 
 </head>
-
 <body>
-    <div class="bgded" style="background-image:url('../images/demo/backgrounds/01.png');">
-        <div class="wrapper row1">
-            <header id="header" class="hoc clear">
-                <div id="logo" class="fl_left">
-                    <!-- ################################################################################################ -->
-                    <h1 class="logoname"><a href="../index.html">Sio<span>pp</span></a></h1>
-                    <!-- ################################################################################################ -->
+    <div class="banner w3l-1">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header wow fadeInLeft animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+
+                    <!--toggle button-->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <h1><a class="navbar-brand" href="#">Mystery</a></h1>
                 </div>
-                <nav id="mainav" class="fl_right">
-                    <!-- ################################################################################################ -->
-                    <ul class="clear">
-                        <li><a href="../index.html">Home</a></li>
-                        <li class="active">
-                            <a class="drop" href="#">Pages</a>
-                            <ul>
-                                <li><a href="gallery.html">Gallery</a></li>
-                                <li><a href="full-width.html">Full Width</a></li>
-                                <li><a href="sidebar-left.html">Sidebar Left</a></li>
-                                <li><a href="sidebar-right.html">Sidebar Right</a></li>
-                                <li class="active"><a href="basic-grid.html">Basic Grid</a></li>
-                                <li><a href="font-icons.html">Font Icons</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="drop" href="#">Dropdown</a>
-                            <ul>
-                                <li><a href="#">Level 2</a></li>
-                                <li>
-                                    <a class="drop" href="#">Level 2 + Drop</a>
-                                    <ul>
-                                        <li><a href="#">Level 3</a></li>
-                                        <li><a href="#">Level 3</a></li>
-                                        <li><a href="#">Level 3</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Level 2</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Link Text</a></li>
-                        <li><a href="#">Link Text</a></li>
-                        <li><a href="#">Link Text</a></li>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#home" class="scroll">Home</a></li>
+                        <li><a href="#services" class="scroll">Services</a></li>
+                        <li><a href="#pricing" class="scroll">Pricing</a></li>
+                        <li><a href="#about" class="scroll">About</a></li>
+                        <li><a href="#portfolio" class="scroll">Projects</a></li>
+                        <li><a href="#contact" class="scroll">Contact</a></li>
+
                     </ul>
-                    <!-- ################################################################################################ -->
-                </nav>
-            </header>
-        </div>
-        @RenderBody();
+
+                    <div class="social wow fadeInRight animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;">
+                        <ul>
+                            <li><a href="#" class="facebook"> </a></li>
+                            <li><a href="#" class="facebook twitter"> </a></li>
+                            <li><a href="#" class="facebook chrome"> </a></li>
+                            <li><a href="#" class="facebook in"> </a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </nav>
     </div>
+    @RenderBody();
+
+    <script src="@Url.Content("~/Assets/js/jquery-1.11.1.min.js")"></script>
+    <script src="@Url.Content("~/Assets/js/bootstrap.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Assets/js/move-top.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Assets/js/easing.js")"></script>
+    <script src="@Url.Content("~/Assets/js/jquery.chocolat.js")"></script>
+    <script src="@Url.Content("~/Assets/js/wow.min.js")"></script>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1200);
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $().UItoTop({ easingType: 'easeOutQuart' });
+        });
+    </script>
+
+    <!--light-box-files -->
+    <script type="text/javascript">
+        $(function () {
+            $('#example1 a').Chocolat();
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('#portfolio a').Chocolat();
+        });
+    </script>
+
+    <!-- animation-effect -->
+    <script>
+        new WOW().init();
+    </script>
+    <!-- //animation-effect -->
 </body>
 </html>

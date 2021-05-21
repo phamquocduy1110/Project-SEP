@@ -173,8 +173,10 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\css\topmenu.css" />
-    <Content Include="Assets\css\bootstrap.min.css" />
+    <Content Include="Assets\css\animate.min.css" />
+    <Content Include="Assets\css\bootstrap.css" />
+    <Content Include="Assets\css\chocolat.css" />
+    <Content Include="Assets\css\flexslider.css" />
     <Content Include="Assets\css\fontawesome-all.min.css" />
     <Content Include="Assets\css\fonts.css" />
     <Content Include="Assets\css\framework.css" />
@@ -293,8 +295,12 @@
     <Content Include="Assets\img\testimonials\t1.jpg" />
     <Content Include="Assets\img\testimonials\t2.jpg" />
     <Content Include="Assets\js\bootstrap.min.js" />
-    <Content Include="Assets\js\jquery.3.4.1.js" />
-    <Content Include="Assets\js\main.js" />
+    <Content Include="Assets\js\easing.js" />
+    <Content Include="Assets\js\jquery-1.11.1.min.js" />
+    <Content Include="Assets\js\jquery.chocolat.js" />
+    <Content Include="Assets\js\jquery.flexslider.js" />
+    <Content Include="Assets\js\move-top.js" />
+    <Content Include="Assets\js\wow.min.js" />
     <Content Include="Assets\vendor\isotope\isotope.min.js" />
     <Content Include="Assets\vendor\Magnific-Popup\dist\jquery.magnific-popup.js" />
     <Content Include="Assets\vendor\Magnific-Popup\dist\jquery.magnific-popup.min.js" />
@@ -402,6 +408,10 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Assets\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
