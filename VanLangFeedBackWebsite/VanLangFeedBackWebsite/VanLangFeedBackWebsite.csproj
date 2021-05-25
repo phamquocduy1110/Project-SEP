@@ -184,12 +184,15 @@
     <Content Include="Assets\css\partials\_global.css" />
     <Content Include="Assets\css\partials\_variables.css" />
     <Content Include="Assets\css\responsive.css" />
+    <Content Include="Assets\img\social.png" />
     <Content Include="Assets\css\style.css" />
     <Content Include="Assets\fonts\Roboto\LICENSE.txt" />
     <Content Include="Assets\icons\fa-brands-400.svg" />
     <Content Include="Assets\icons\fa-regular-400.svg" />
     <Content Include="Assets\icons\fa-solid-900.svg" />
     <Content Include="Assets\img\about-us.png" />
+    <Content Include="Assets\img\backgrounds\01.png" />
+    <Content Include="Assets\img\backgrounds\index.html" />
     <Content Include="Assets\img\banner\banner-image.png" />
     <Content Include="Assets\img\banner\home-banner.png" />
     <Content Include="Assets\img\blog\author.png" />
@@ -412,6 +415,7 @@
     <Content Include="Assets\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Assets\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Assets\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Properties\PublishProfiles\FTPProfile.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />

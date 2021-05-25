@@ -452,22 +452,9 @@ a.navbar-brand {
         }
 
             .social ul li a.facebook {
-                background: url(../images/social.png) no-repeat 0px 0px;
                 width: 32px;
                 height: 32px;
                 display: block;
-            }
-
-            .social ul li a.twitter {
-                background: url(../images/social.png) no-repeat -34px 0px;
-            }
-
-            .social ul li a.chrome {
-                background: url(../images/social.png) no-repeat -68px 0px;
-            }
-
-            .social ul li a.in {
-                background: url(../images/social.png) no-repeat -102px 0px;
             }
 
             .social ul li a.facebook:hover {
