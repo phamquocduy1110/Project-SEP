@@ -190,7 +190,9 @@ label {
   margin-bottom: 0.5rem; }
 
 button {
-  border-radius: 0; }
+  border-radius: 0; 
+  display:inline-block;
+}
 
 button:focus {
   outline: 1px dotted;
@@ -1187,7 +1189,7 @@ pre {
     width: auto;
     max-width: 100%; }
   .col-xl-1 {
-    -webkit-box-flex: 0;
+    -webkit-box-flex: 0
     -ms-flex: 0 0 8.33333%;
     flex: 0 0 8.33333%;
     max-width: 8.33333%; }
