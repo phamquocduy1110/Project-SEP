@@ -177,6 +177,7 @@
     <Content Include="Assets\css\animate.min.css" />
     <Content Include="Assets\css\bootstrap.css" />
     <Content Include="Assets\css\chocolat.css" />
+    <Content Include="Assets\css\contactcss\style.css" />
     <Content Include="Assets\css\flexslider.css" />
     <Content Include="Assets\css\fontawesome-all.min.css" />
     <Content Include="Assets\css\fonts.css" />
@@ -186,6 +187,7 @@
     <Content Include="Assets\css\partials\_global.css" />
     <Content Include="Assets\css\partials\_variables.css" />
     <Content Include="Assets\css\responsive.css" />
+    <Content Include="Assets\img\backgrounds\vanlangcontact.jpg" />
     <Content Include="Assets\img\login.jpg" />
     <Content Include="Assets\img\social.png" />
     <Content Include="Assets\css\style.css" />
