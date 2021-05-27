@@ -173,6 +173,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Area\Admin\AdminHome.cshtml" />
     <Content Include="Assets\css\animate.min.css" />
     <Content Include="Assets\css\bootstrap.css" />
     <Content Include="Assets\css\chocolat.css" />
@@ -181,9 +182,11 @@
     <Content Include="Assets\css\fonts.css" />
     <Content Include="Assets\css\framework.css" />
     <Content Include="Assets\css\layout.css" />
+    <Content Include="Assets\css\logincss\style.css" />
     <Content Include="Assets\css\partials\_global.css" />
     <Content Include="Assets\css\partials\_variables.css" />
     <Content Include="Assets\css\responsive.css" />
+    <Content Include="Assets\img\login.jpg" />
     <Content Include="Assets\img\social.png" />
     <Content Include="Assets\css\style.css" />
     <Content Include="Assets\fonts\Roboto\LICENSE.txt" />
@@ -192,7 +195,6 @@
     <Content Include="Assets\icons\fa-solid-900.svg" />
     <Content Include="Assets\img\about-us.png" />
     <Content Include="Assets\img\backgrounds\01.png" />
-    <Content Include="Assets\img\backgrounds\index.html" />
     <Content Include="Assets\img\banner\banner-image.png" />
     <Content Include="Assets\img\banner\home-banner.png" />
     <Content Include="Assets\img\blog\author.png" />
@@ -427,6 +429,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <None Include="Views\Account\Login.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
