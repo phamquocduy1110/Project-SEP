@@ -27,5 +27,10 @@ namespace VanLangFeedBackWebsite.Controllers
 
             return View();
         }
+
+        public ActionResult Questions()
+        {
+            return View();
+        }
     }
 }

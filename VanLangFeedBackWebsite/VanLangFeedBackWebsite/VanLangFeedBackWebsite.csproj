@@ -186,8 +186,29 @@
     <Content Include="Assets\css\logincss\style.css" />
     <Content Include="Assets\css\partials\_global.css" />
     <Content Include="Assets\css\partials\_variables.css" />
+    <Content Include="Assets\css\questionscss\theme-1.css" />
+    <Content Include="Assets\css\questionscss\theme-2.css" />
+    <Content Include="Assets\css\questionscss\theme-3.css" />
+    <Content Include="Assets\css\questionscss\theme-4.css" />
+    <Content Include="Assets\css\questionscss\theme-5.css" />
+    <Content Include="Assets\css\questionscss\theme-6.css" />
+    <Content Include="Assets\css\questionscss\theme-7.css" />
+    <Content Include="Assets\css\questionscss\theme-8.css" />
     <Content Include="Assets\css\responsive.css" />
     <Content Include="Assets\img\backgrounds\vanlangcontact.jpg" />
+    <Content Include="Assets\img\blog\blog-post-banner.jpg" />
+    <Content Include="Assets\img\blog\blog-post-thumb-1.jpg" />
+    <Content Include="Assets\img\blog\blog-post-thumb-10.jpg" />
+    <Content Include="Assets\img\blog\blog-post-thumb-11.jpg" />
+    <Content Include="Assets\img\blog\blog-post-thumb-12.jpg" />
+    <Content Include="Assets\img\blog\blog-post-thumb-2.jpg" />
+    <Content Include="Assets\img\blog\blog-post-thumb-3.jpg" />
+    <Content Include="Assets\img\blog\blog-post-thumb-4.jpg" />
+    <Content Include="Assets\img\blog\blog-post-thumb-5.jpg" />
+    <Content Include="Assets\img\blog\blog-post-thumb-6.jpg" />
+    <Content Include="Assets\img\blog\blog-post-thumb-7.jpg" />
+    <Content Include="Assets\img\blog\blog-post-thumb-8.jpg" />
+    <Content Include="Assets\img\blog\blog-post-thumb-9.jpg" />
     <Content Include="Assets\img\login.jpg" />
     <Content Include="Assets\img\social.png" />
     <Content Include="Assets\css\style.css" />
@@ -199,14 +220,6 @@
     <Content Include="Assets\img\backgrounds\01.png" />
     <Content Include="Assets\img\banner\banner-image.png" />
     <Content Include="Assets\img\banner\home-banner.png" />
-    <Content Include="Assets\img\blog\author.png" />
-    <Content Include="Assets\img\blog\learn_about_bg.png" />
-    <Content Include="Assets\img\blog\single_blog_1.png" />
-    <Content Include="Assets\img\blog\single_blog_2.png" />
-    <Content Include="Assets\img\blog\single_blog_3.png" />
-    <Content Include="Assets\img\blog\single_blog_4.png" />
-    <Content Include="Assets\img\blog\single_blog_5.png" />
-    <Content Include="Assets\img\blog\slide_thumb_1.png" />
     <Content Include="Assets\img\brands\logo1.png" />
     <Content Include="Assets\img\brands\logo2.png" />
     <Content Include="Assets\img\brands\logo3.png" />
@@ -449,6 +462,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Account\SignOutCallback.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Home\Questions.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
