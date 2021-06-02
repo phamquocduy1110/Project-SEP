@@ -677,7 +677,7 @@
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Home\Questions.cshtml" />
     <Content Include="Areas\Admin\Views\HomeAdmin\Index.cshtml" />
-    <Content Include="Views\AdminHome\AdminTable.cshtml" />
+    <Content Include="Areas\Admin\Views\HomeAdmin\AdminTable.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
