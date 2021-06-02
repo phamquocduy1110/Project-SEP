@@ -16,11 +16,11 @@ namespace WebApplication1.Models
     {
         public int ID { get; set; }
         public int ORDER_ID { get; set; }
-        public int MENU_ID { get; set; }
+        public int PRODUCT_ID { get; set; }
         public int QUANTITY { get; set; }
-        public int PRICE { get; set; }
+        public int UNIT_PRICE { get; set; }
     
-        public virtual MENU MENU { get; set; }
         public virtual ORDER ORDER { get; set; }
+        public virtual PRODUCT PRODUCT { get; set; }
     }
 }
