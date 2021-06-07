@@ -209,8 +209,8 @@ D:\Project-SEP\dieubanthuonghoi\dieubanthuonghoi\bin\Microsoft.Owin.Security.Twi
 D:\Project-SEP\dieubanthuonghoi\dieubanthuonghoi\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\Project-SEP\dieubanthuonghoi\dieubanthuonghoi\bin\Microsoft.Owin.Security.OAuth.xml
 D:\Project-SEP\dieubanthuonghoi\dieubanthuonghoi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\Project-SEP\dieubanthuonghoi\dieubanthuonghoi\obj\Debug\dieubanthuonghoi.csprojAssemblyReference.cache
 D:\Project-SEP\dieubanthuonghoi\dieubanthuonghoi\obj\Debug\dieubanthuonghoi.csproj.CoreCompileInputs.cache
 D:\Project-SEP\dieubanthuonghoi\dieubanthuonghoi\obj\Debug\dieubanthuonghoi.csproj.CopyComplete
 D:\Project-SEP\dieubanthuonghoi\dieubanthuonghoi\obj\Debug\dieubanthuonghoi.dll
 D:\Project-SEP\dieubanthuonghoi\dieubanthuonghoi\obj\Debug\dieubanthuonghoi.pdb
+D:\Project-SEP\dieubanthuonghoi\dieubanthuonghoi\obj\Debug\dieubanthuonghoi.csproj.AssemblyReference.cache

@@ -196,6 +196,14 @@
     <Content Include="Assets\css\LayoutCss\chocolat.css" />
     <Content Include="Assets\css\LayoutCss\flexslider.css" />
     <Content Include="Assets\css\LayoutCss\style.css" />
+    <Content Include="Assets\css\QuestionsCss\theme-1.css" />
+    <Content Include="Assets\css\QuestionsCss\theme-2.css" />
+    <Content Include="Assets\css\QuestionsCss\theme-3.css" />
+    <Content Include="Assets\css\QuestionsCss\theme-4.css" />
+    <Content Include="Assets\css\QuestionsCss\theme-5.css" />
+    <Content Include="Assets\css\QuestionsCss\theme-6.css" />
+    <Content Include="Assets\css\QuestionsCss\theme-7.css" />
+    <Content Include="Assets\css\QuestionsCss\theme-8.css" />
     <Content Include="Assets\images\backgrounds\01.png" />
     <Content Include="Assets\images\icons\homeicon.png" />
     <Content Include="Assets\js\AdminIndexJS\bootstrap-datetimepicker.js" />
