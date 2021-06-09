@@ -208,10 +208,16 @@
     <Content Include="Assets\images\backgrounds\01.png" />
     <Content Include="Assets\images\icons\homeicon.png" />
     <Content Include="Assets\images\icons\user.png" />
+    <Content Include="Assets\images\logo\IT-ADMIN_Logo.png" />
     <Content Include="Assets\images\logo\VanLangLogo.png" />
+    <Content Include="Assets\images\backgrounds\03.jpg" />
     <Content Include="Assets\js\AdminIndexJS\bootstrap-datetimepicker.js" />
     <Content Include="Assets\js\AdminIndexJS\main.js" />
     <Content Include="Assets\js\AdminIndexJS\moment.js" />
+    <Content Include="Assets\js\IndexJS\jquery.backtotop.js" />
+    <Content Include="Assets\js\IndexJS\jquery.easypiechart.min.js" />
+    <Content Include="Assets\js\IndexJS\jquery.min.js" />
+    <Content Include="Assets\js\IndexJS\jquery.mobilemenu.js" />
     <Content Include="Assets\js\LayoutJS\bootstrap.min.js" />
     <Content Include="Assets\js\LayoutJS\easing.js" />
     <Content Include="Assets\js\LayoutJS\jquery-1.11.1.min.js" />
@@ -392,6 +398,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Assets\images\backgrounds\footerbackground.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\Admin\Views\web.config" />
@@ -442,6 +449,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Assets\images\backgrounds\02.jpg" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

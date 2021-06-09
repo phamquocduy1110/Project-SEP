@@ -60,7 +60,7 @@
             </div>
         </nav>
     </div>
-    @RenderBody();
+    @RenderBody()
 
     <script src="@Url.Content("~/Assets/js/LayoutJS/jquery-1.11.1.min.js")"></script>
     <script src="@Url.Content("~/Assets/js/LayoutJS/bootstrap.min.js")"></script>
@@ -103,6 +103,13 @@
         new WOW().init();
     </script>
     <!-- //animation-effect -->
+    <!-- JAVASCRIPTS -->
+    <script src="@Url.Content("~/Assets/js/IndexJS/jquery.min.js")"></script>
+    <script src="@Url.Content("~/Assets/js/IndexJS/jquery.backtotop.js")"></script>
+    <script src="@Url.Content("~/Assets/js/IndexJS/jquery.mobilemenu.js")"></script>
+    <!-- Homepage specific -->
+    <script src="@Url.Content("~/Assets/js/IndexJS/jquery.easypiechart.min.js")"></script>
+    <!-- / Homepage specific -->
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
