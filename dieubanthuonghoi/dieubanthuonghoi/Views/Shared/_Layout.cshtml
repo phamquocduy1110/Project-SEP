@@ -24,7 +24,7 @@
 </head>
 <body>
     <div class="banner w3l-1">
-        <nav class="navbar navbar-default navbar-fixed-top" style="background-color:blue">
+        <nav class="navbar navbar-default navbar-fixed-top" style="background-color:deeppink">
             <div class="container" style="padding: initial">
                 <div class="navbar-header wow fadeInLeft animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
 
@@ -36,7 +36,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <h1>
-                        <img class="navbar-brand" src="https://upload.wikimedia.org/wikipedia/vi/thumb/a/a0/Logo-vlu-2018-wiki.jpg/1200px-Logo-vlu-2018-wiki.jpg" style="padding:initial"></img>
+                        <img class="navbar-brand" src="@Url.Content("~/Assets/images/logo/VanLangLogo.png")" style="padding:initial">
                     </h1>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
@@ -55,13 +55,12 @@
                             @Html.ActionLink("Contact", "Contact", "Home")
                         </li>
                         @Html.Partial("_LoginPartial")
-                        <
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
-    @RenderBody();
+    @RenderBody()
 
     <script src="@Url.Content("~/Assets/js/LayoutJS/jquery-1.11.1.min.js")"></script>
     <script src="@Url.Content("~/Assets/js/LayoutJS/bootstrap.min.js")"></script>
@@ -104,6 +103,13 @@
         new WOW().init();
     </script>
     <!-- //animation-effect -->
+    <!-- JAVASCRIPTS -->
+    <script src="@Url.Content("~/Assets/js/IndexJS/jquery.min.js")"></script>
+    <script src="@Url.Content("~/Assets/js/IndexJS/jquery.backtotop.js")"></script>
+    <script src="@Url.Content("~/Assets/js/IndexJS/jquery.mobilemenu.js")"></script>
+    <!-- Homepage specific -->
+    <script src="@Url.Content("~/Assets/js/IndexJS/jquery.easypiechart.min.js")"></script>
+    <!-- / Homepage specific -->
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
