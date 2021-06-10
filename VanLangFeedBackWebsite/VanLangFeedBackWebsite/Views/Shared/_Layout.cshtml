@@ -34,7 +34,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <h1>
-                        <img class="navbar-brand" src="https://upload.wikimedia.org/wikipedia/vi/thumb/a/a0/Logo-vlu-2018-wiki.jpg/1200px-Logo-vlu-2018-wiki.jpg" style="padding:initial"></img>
+                        <img class="navbar-brand" src="@Url.Content("~/Assets/images/logo/VanLangLogo.png")" style="padding:initial">
                     </h1>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
@@ -71,7 +71,7 @@
             </div>
         </nav>
     </div>
-    @RenderBody();
+    @RenderBody()
 
     <script src="@Url.Content("~/Assets/js/jquery-1.11.1.min.js")"></script>
     <script src="@Url.Content("~/Assets/js/bootstrap.min.js")"></script>
@@ -114,5 +114,19 @@
         new WOW().init();
     </script>
     <!-- //animation-effect -->
+<<<<<<< HEAD:VanLangFeedBackWebsite/VanLangFeedBackWebsite/Views/Shared/_Layout.cshtml
+=======
+    <!-- JAVASCRIPTS -->
+    <script src="@Url.Content("~/Assets/js/IndexJS/jquery.min.js")"></script>
+    <script src="@Url.Content("~/Assets/js/IndexJS/jquery.backtotop.js")"></script>
+    <script src="@Url.Content("~/Assets/js/IndexJS/jquery.mobilemenu.js")"></script>
+    <!-- Homepage specific -->
+    <script src="@Url.Content("~/Assets/js/IndexJS/jquery.easypiechart.min.js")"></script>
+    <!-- / Homepage specific -->
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+>>>>>>> origin/PhamQuocDuy:dieubanthuonghoi/dieubanthuonghoi/Views/Shared/_Layout.cshtml
 </body>
 </html>
