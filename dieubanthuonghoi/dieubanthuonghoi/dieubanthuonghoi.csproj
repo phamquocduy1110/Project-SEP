@@ -521,6 +521,10 @@
       <DependentUpon>Model1.edmx</DependentUpon>
     </Content>
     <Content Include="Areas\Admin\Views\ListQuestionsAdmin\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\ListQuestionsAdmin\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\ListQuestionsAdmin\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\ListQuestionsAdmin\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\ListQuestionsAdmin\Create.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
