@@ -35,7 +35,7 @@
                     </div>
                     <div class="col-5 align-self-center">
                         <div class="customize-input float-right">
-                            <input type="button" value="Tạo mới danh mục" onclick="location.href='@Url.Action("Create", "ManageCatalog")'" class="custom-select custom-select-set form-control bg-white border-0 custom-shadow custom-radius"/>
+                            <input type="button" value="Tạo mới danh mục" onclick="location.href='@Url.Action("Create", "ManageCatalog")'" style="color: green" class="custom-select custom-select-set form-control bg-white border-0 custom-shadow custom-radius"/>
                         </div>
                     </div>
                 </div>
@@ -73,7 +73,7 @@
                                             {
                                                 <tr>
                                                     <td>
-                                                        @Html.DisplayFor(modelItem => item.TEN_DANH_MUC)
+                                                        @Html.DisplayFor(modelItem => item.DANH_MUC1)
                                                     </td>
                                                     <td>
                                                         @Html.DisplayFor(modelItem => item.MO_TA)
@@ -85,7 +85,7 @@
                                                         @Html.DisplayFor(modelItem => item.NGAY_TAO)
                                                     </td>
                                                     <td>
-                                                        @Html.DisplayFor(modelItem => item.NGUOI_TAO)
+                                                        @Html.DisplayFor(modelItem => item.TAI_KHOAN.EMAIL)
                                                     </td>
                                                     <td>
                                                         @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |

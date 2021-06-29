@@ -10,12 +10,13 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="TEN_CAU_HOI" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CAU_HOI" Type="nvarchar(max)" Nullable="false" />
           <Property Name="MO_TA" Type="nvarchar(max)" />
-          <Property Name="NGAY_TAO" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="NGAY_TAO" Type="datetime2" Precision="7" />
           <Property Name="ID_DANH_MUC" Type="int" Nullable="false" />
-          <Property Name="NGUOI_DANG" Type="int" Nullable="false" />
+          <Property Name="ID_TAI_KHOAN" Type="int" Nullable="false" />
           <Property Name="LUOT_XEM" Type="int" Nullable="false" />
+          <Property Name="DUYET_DANG" Type="bit" />
         </EntityType>
         <EntityType Name="CAU_TRA_LOI">
           <Key>
@@ -24,47 +25,47 @@
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="ID_CAU_HOI" Type="int" Nullable="false" />
           <Property Name="CAU_TRA_LOI" Type="nvarchar(max)" />
-          <Property Name="NGAY_TRA_LOI" Type="datetime2" Precision="7" Nullable="false" />
-          <Property Name="NGUOI_TRA_LOI" Type="int" Nullable="false" />
+          <Property Name="NGAY_TRA_LOI" Type="datetime2" Precision="7" />
+          <Property Name="ID_TAI_KHOAN" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="DANH_MUC">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="TEN_DANH_MUC" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DANH_MUC" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="MO_TA" Type="nvarchar(max)" />
           <Property Name="HINH_ANH" Type="nvarchar(max)" Nullable="false" />
-          <Property Name="NGAY_TAO" Type="datetime2" Precision="7" Nullable="false" />
-          <Property Name="NGUOI_TAO" Type="int" Nullable="false" />
+          <Property Name="NGAY_TAO" Type="datetime2" Precision="7" />
+          <Property Name="ID_TAI_KHOAN" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="LICH_SU_CHINH_SUA_CAU_HOI">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="TEN_CAU_HOI_TRUOC_CHINH_SUA" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CAU_HOI_TRUOC_CHINH_SUA" Type="nvarchar(max)" Nullable="false" />
           <Property Name="MO_TA_TRUOC_CHINH_SUA" Type="nvarchar(max)" />
-          <Property Name="NGAY_CHINH_SUA" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="NGAY_CHINH_SUA" Type="datetime2" Precision="7" />
           <Property Name="ID_DANH_MUC_TRUOC_CHINH_SUA" Type="int" Nullable="false" />
-          <Property Name="TEN_CAU_HOI_SAU_CHINH_SUA" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CAU_HOI_SAU_CHINH_SUA" Type="nvarchar(max)" Nullable="false" />
           <Property Name="MO_TA_SAU_CHINH_SUA" Type="nvarchar(max)" />
           <Property Name="ID_DANH_MUC_SAU_CHINH_SUA" Type="int" Nullable="false" />
-          <Property Name="NGUOI_CHINH_SUA" Type="int" Nullable="false" />
+          <Property Name="ID_TAI_KHOAN" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="LICH_SU_CHINH_SUA_DANH_MUC">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="TEN_DANH_MUC_TRUOC_CHINH_SUA" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="DANH_MUC_TRUOC_CHINH_SUA" Type="nvarchar(max)" Nullable="false" />
           <Property Name="MO_TA_TRUOC_CHINH_SUA" Type="nvarchar(max)" />
-          <Property Name="NGAY_CHINH_SUA" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="NGAY_CHINH_SUA" Type="datetime2" Precision="7" />
           <Property Name="HINH_ANH_TRUOC_CHINH_SUA" Type="nvarchar(max)" Nullable="false" />
-          <Property Name="TEN_DANH_MUC_SAU_CHINH_SUA" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="DANH_MUC_SAU_CHINH_SUA" Type="nvarchar(max)" Nullable="false" />
           <Property Name="MO_TA_SAU_CHINH_SUA" Type="nvarchar(max)" />
           <Property Name="HINH_ANH_SAU_CHINH_SUA" Type="nvarchar(max)" Nullable="false" />
-          <Property Name="NGUOI_CHINH_SUA" Type="int" Nullable="false" />
+          <Property Name="ID_TAI_KHOAN" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="LUOT_TIM_TU_KHOA">
           <Key>
@@ -86,7 +87,7 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="ID_NGUOI_DUNG" Type="int" Nullable="false" />
+          <Property Name="ID_TAI_KHOAN" Type="int" Nullable="false" />
           <Property Name="ID_QUYEN" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="sysdiagrams">
@@ -107,7 +108,7 @@
           <Property Name="AVATAR" Type="nvarchar(max)" Nullable="false" />
           <Property Name="MAT_KHAU" Type="varchar" MaxLength="50" />
           <Property Name="EMAIL" Type="varchar(max)" Nullable="false" />
-          <Property Name="MA_SO" Type="varchar" MaxLength="50" />
+          <Property Name="MA_SO_NGUOI_DUNG" Type="varchar" MaxLength="50" />
         </EntityType>
         <Association Name="FK_CAU_HOI_DANH_MUC">
           <End Role="DANH_MUC" Type="Self.DANH_MUC" Multiplicity="1" />
@@ -129,7 +130,7 @@
               <PropertyRef Name="ID" />
             </Principal>
             <Dependent Role="CAU_HOI">
-              <PropertyRef Name="NGUOI_DANG" />
+              <PropertyRef Name="ID_TAI_KHOAN" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -153,7 +154,7 @@
               <PropertyRef Name="ID" />
             </Principal>
             <Dependent Role="CAU_TRA_LOI">
-              <PropertyRef Name="NGUOI_TRA_LOI" />
+              <PropertyRef Name="ID_TAI_KHOAN" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -165,7 +166,7 @@
               <PropertyRef Name="ID" />
             </Principal>
             <Dependent Role="DANH_MUC">
-              <PropertyRef Name="NGUOI_TAO" />
+              <PropertyRef Name="ID_TAI_KHOAN" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -177,7 +178,7 @@
               <PropertyRef Name="ID" />
             </Principal>
             <Dependent Role="LICH_SU_CHINH_SUA_CAU_HOI">
-              <PropertyRef Name="NGUOI_CHINH_SUA" />
+              <PropertyRef Name="ID_TAI_KHOAN" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -189,7 +190,7 @@
               <PropertyRef Name="ID" />
             </Principal>
             <Dependent Role="LICH_SU_CHINH_SUA_DANH_MUC">
-              <PropertyRef Name="NGUOI_CHINH_SUA" />
+              <PropertyRef Name="ID_TAI_KHOAN" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -213,7 +214,7 @@
               <PropertyRef Name="ID" />
             </Principal>
             <Dependent Role="QUYEN_CUA_USER">
-              <PropertyRef Name="ID_NGUOI_DUNG" />
+              <PropertyRef Name="ID_TAI_KHOAN" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -275,12 +276,13 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="TEN_CAU_HOI" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CAU_HOI1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="MO_TA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="NGAY_TAO" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="NGAY_TAO" Type="DateTime" Precision="7" />
           <Property Name="ID_DANH_MUC" Type="Int32" Nullable="false" />
-          <Property Name="NGUOI_DANG" Type="Int32" Nullable="false" />
+          <Property Name="ID_TAI_KHOAN" Type="Int32" Nullable="false" />
           <Property Name="LUOT_XEM" Type="Int32" Nullable="false" />
+          <Property Name="DUYET_DANG" Type="Boolean" />
           <NavigationProperty Name="DANH_MUC" Relationship="Self.FK_CAU_HOI_DANH_MUC" FromRole="CAU_HOI" ToRole="DANH_MUC" />
           <NavigationProperty Name="TAI_KHOAN" Relationship="Self.FK_CAU_HOI_TAI_KHOAN" FromRole="CAU_HOI" ToRole="TAI_KHOAN" />
           <NavigationProperty Name="CAU_TRA_LOI" Relationship="Self.FK_CAU_TRA_LOI_CAU_HOI" FromRole="CAU_HOI" ToRole="CAU_TRA_LOI" />
@@ -292,8 +294,8 @@
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="ID_CAU_HOI" Type="Int32" Nullable="false" />
           <Property Name="CAU_TRA_LOI1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="NGAY_TRA_LOI" Type="DateTime" Nullable="false" Precision="7" />
-          <Property Name="NGUOI_TRA_LOI" Type="Int32" Nullable="false" />
+          <Property Name="NGAY_TRA_LOI" Type="DateTime" Precision="7" />
+          <Property Name="ID_TAI_KHOAN" Type="Int32" Nullable="false" />
           <NavigationProperty Name="CAU_HOI" Relationship="Self.FK_CAU_TRA_LOI_CAU_HOI" FromRole="CAU_TRA_LOI" ToRole="CAU_HOI" />
           <NavigationProperty Name="TAI_KHOAN" Relationship="Self.FK_CAU_TRA_LOI_TAI_KHOAN" FromRole="CAU_TRA_LOI" ToRole="TAI_KHOAN" />
         </EntityType>
@@ -302,11 +304,11 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="TEN_DANH_MUC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DANH_MUC1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="MO_TA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="HINH_ANH" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="NGAY_TAO" Type="DateTime" Nullable="false" Precision="7" />
-          <Property Name="NGUOI_TAO" Type="Int32" Nullable="false" />
+          <Property Name="NGAY_TAO" Type="DateTime" Precision="7" />
+          <Property Name="ID_TAI_KHOAN" Type="Int32" Nullable="false" />
           <NavigationProperty Name="CAU_HOI" Relationship="Self.FK_CAU_HOI_DANH_MUC" FromRole="DANH_MUC" ToRole="CAU_HOI" />
           <NavigationProperty Name="TAI_KHOAN" Relationship="Self.FK_DANH_MUC_TAI_KHOAN" FromRole="DANH_MUC" ToRole="TAI_KHOAN" />
         </EntityType>
@@ -315,14 +317,14 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="TEN_CAU_HOI_TRUOC_CHINH_SUA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CAU_HOI_TRUOC_CHINH_SUA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="MO_TA_TRUOC_CHINH_SUA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="NGAY_CHINH_SUA" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="NGAY_CHINH_SUA" Type="DateTime" Precision="7" />
           <Property Name="ID_DANH_MUC_TRUOC_CHINH_SUA" Type="Int32" Nullable="false" />
-          <Property Name="TEN_CAU_HOI_SAU_CHINH_SUA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CAU_HOI_SAU_CHINH_SUA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="MO_TA_SAU_CHINH_SUA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="ID_DANH_MUC_SAU_CHINH_SUA" Type="Int32" Nullable="false" />
-          <Property Name="NGUOI_CHINH_SUA" Type="Int32" Nullable="false" />
+          <Property Name="ID_TAI_KHOAN" Type="Int32" Nullable="false" />
           <NavigationProperty Name="TAI_KHOAN" Relationship="Self.FK_LICH_SU_CHINH_SUA_CAU_HOI_TAI_KHOAN" FromRole="LICH_SU_CHINH_SUA_CAU_HOI" ToRole="TAI_KHOAN" />
         </EntityType>
         <EntityType Name="LICH_SU_CHINH_SUA_DANH_MUC">
@@ -330,14 +332,14 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="TEN_DANH_MUC_TRUOC_CHINH_SUA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DANH_MUC_TRUOC_CHINH_SUA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="MO_TA_TRUOC_CHINH_SUA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="NGAY_CHINH_SUA" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="NGAY_CHINH_SUA" Type="DateTime" Precision="7" />
           <Property Name="HINH_ANH_TRUOC_CHINH_SUA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="TEN_DANH_MUC_SAU_CHINH_SUA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DANH_MUC_SAU_CHINH_SUA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="MO_TA_SAU_CHINH_SUA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="HINH_ANH_SAU_CHINH_SUA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="NGUOI_CHINH_SUA" Type="Int32" Nullable="false" />
+          <Property Name="ID_TAI_KHOAN" Type="Int32" Nullable="false" />
           <NavigationProperty Name="TAI_KHOAN" Relationship="Self.FK_LICH_SU_CHINH_SUA_DANH_MUC_TAI_KHOAN" FromRole="LICH_SU_CHINH_SUA_DANH_MUC" ToRole="TAI_KHOAN" />
         </EntityType>
         <EntityType Name="LUOT_TIM_TU_KHOA">
@@ -361,7 +363,7 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="ID_NGUOI_DUNG" Type="Int32" Nullable="false" />
+          <Property Name="ID_TAI_KHOAN" Type="Int32" Nullable="false" />
           <Property Name="ID_QUYEN" Type="Int32" Nullable="false" />
           <NavigationProperty Name="QUYEN" Relationship="Self.FK_QUYEN_CUA_USER_QUYEN" FromRole="QUYEN_CUA_USER" ToRole="QUYEN" />
           <NavigationProperty Name="TAI_KHOAN" Relationship="Self.FK_QUYEN_CUA_USER_TAI_KHOAN" FromRole="QUYEN_CUA_USER" ToRole="TAI_KHOAN" />
@@ -384,7 +386,7 @@
           <Property Name="AVATAR" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="MAT_KHAU" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="EMAIL" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="MA_SO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="MA_SO_NGUOI_DUNG" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="CAU_HOI" Relationship="Self.FK_CAU_HOI_TAI_KHOAN" FromRole="TAI_KHOAN" ToRole="CAU_HOI" />
           <NavigationProperty Name="CAU_TRA_LOI" Relationship="Self.FK_CAU_TRA_LOI_TAI_KHOAN" FromRole="TAI_KHOAN" ToRole="CAU_TRA_LOI" />
           <NavigationProperty Name="DANH_MUC" Relationship="Self.FK_DANH_MUC_TAI_KHOAN" FromRole="TAI_KHOAN" ToRole="DANH_MUC" />
@@ -412,7 +414,7 @@
               <PropertyRef Name="ID" />
             </Principal>
             <Dependent Role="CAU_HOI">
-              <PropertyRef Name="NGUOI_DANG" />
+              <PropertyRef Name="ID_TAI_KHOAN" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -436,7 +438,7 @@
               <PropertyRef Name="ID" />
             </Principal>
             <Dependent Role="CAU_TRA_LOI">
-              <PropertyRef Name="NGUOI_TRA_LOI" />
+              <PropertyRef Name="ID_TAI_KHOAN" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -448,7 +450,7 @@
               <PropertyRef Name="ID" />
             </Principal>
             <Dependent Role="DANH_MUC">
-              <PropertyRef Name="NGUOI_TAO" />
+              <PropertyRef Name="ID_TAI_KHOAN" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -460,7 +462,7 @@
               <PropertyRef Name="ID" />
             </Principal>
             <Dependent Role="LICH_SU_CHINH_SUA_CAU_HOI">
-              <PropertyRef Name="NGUOI_CHINH_SUA" />
+              <PropertyRef Name="ID_TAI_KHOAN" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -472,7 +474,7 @@
               <PropertyRef Name="ID" />
             </Principal>
             <Dependent Role="LICH_SU_CHINH_SUA_DANH_MUC">
-              <PropertyRef Name="NGUOI_CHINH_SUA" />
+              <PropertyRef Name="ID_TAI_KHOAN" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -496,7 +498,7 @@
               <PropertyRef Name="ID" />
             </Principal>
             <Dependent Role="QUYEN_CUA_USER">
-              <PropertyRef Name="ID_NGUOI_DUNG" />
+              <PropertyRef Name="ID_TAI_KHOAN" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -558,12 +560,13 @@
             <EntityTypeMapping TypeName="DIEUBANTHUONGHOIWEBSITEModel.CAU_HOI">
               <MappingFragment StoreEntitySet="CAU_HOI">
                 <ScalarProperty Name="ID" ColumnName="ID" />
-                <ScalarProperty Name="TEN_CAU_HOI" ColumnName="TEN_CAU_HOI" />
+                <ScalarProperty Name="CAU_HOI1" ColumnName="CAU_HOI" />
                 <ScalarProperty Name="MO_TA" ColumnName="MO_TA" />
                 <ScalarProperty Name="NGAY_TAO" ColumnName="NGAY_TAO" />
                 <ScalarProperty Name="ID_DANH_MUC" ColumnName="ID_DANH_MUC" />
-                <ScalarProperty Name="NGUOI_DANG" ColumnName="NGUOI_DANG" />
+                <ScalarProperty Name="ID_TAI_KHOAN" ColumnName="ID_TAI_KHOAN" />
                 <ScalarProperty Name="LUOT_XEM" ColumnName="LUOT_XEM" />
+                <ScalarProperty Name="DUYET_DANG" ColumnName="DUYET_DANG" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -574,7 +577,7 @@
                 <ScalarProperty Name="ID_CAU_HOI" ColumnName="ID_CAU_HOI" />
                 <ScalarProperty Name="CAU_TRA_LOI1" ColumnName="CAU_TRA_LOI" />
                 <ScalarProperty Name="NGAY_TRA_LOI" ColumnName="NGAY_TRA_LOI" />
-                <ScalarProperty Name="NGUOI_TRA_LOI" ColumnName="NGUOI_TRA_LOI" />
+                <ScalarProperty Name="ID_TAI_KHOAN" ColumnName="ID_TAI_KHOAN" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -582,11 +585,11 @@
             <EntityTypeMapping TypeName="DIEUBANTHUONGHOIWEBSITEModel.DANH_MUC">
               <MappingFragment StoreEntitySet="DANH_MUC">
                 <ScalarProperty Name="ID" ColumnName="ID" />
-                <ScalarProperty Name="TEN_DANH_MUC" ColumnName="TEN_DANH_MUC" />
+                <ScalarProperty Name="DANH_MUC1" ColumnName="DANH_MUC" />
                 <ScalarProperty Name="MO_TA" ColumnName="MO_TA" />
                 <ScalarProperty Name="HINH_ANH" ColumnName="HINH_ANH" />
                 <ScalarProperty Name="NGAY_TAO" ColumnName="NGAY_TAO" />
-                <ScalarProperty Name="NGUOI_TAO" ColumnName="NGUOI_TAO" />
+                <ScalarProperty Name="ID_TAI_KHOAN" ColumnName="ID_TAI_KHOAN" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -594,14 +597,14 @@
             <EntityTypeMapping TypeName="DIEUBANTHUONGHOIWEBSITEModel.LICH_SU_CHINH_SUA_CAU_HOI">
               <MappingFragment StoreEntitySet="LICH_SU_CHINH_SUA_CAU_HOI">
                 <ScalarProperty Name="ID" ColumnName="ID" />
-                <ScalarProperty Name="TEN_CAU_HOI_TRUOC_CHINH_SUA" ColumnName="TEN_CAU_HOI_TRUOC_CHINH_SUA" />
+                <ScalarProperty Name="CAU_HOI_TRUOC_CHINH_SUA" ColumnName="CAU_HOI_TRUOC_CHINH_SUA" />
                 <ScalarProperty Name="MO_TA_TRUOC_CHINH_SUA" ColumnName="MO_TA_TRUOC_CHINH_SUA" />
                 <ScalarProperty Name="NGAY_CHINH_SUA" ColumnName="NGAY_CHINH_SUA" />
                 <ScalarProperty Name="ID_DANH_MUC_TRUOC_CHINH_SUA" ColumnName="ID_DANH_MUC_TRUOC_CHINH_SUA" />
-                <ScalarProperty Name="TEN_CAU_HOI_SAU_CHINH_SUA" ColumnName="TEN_CAU_HOI_SAU_CHINH_SUA" />
+                <ScalarProperty Name="CAU_HOI_SAU_CHINH_SUA" ColumnName="CAU_HOI_SAU_CHINH_SUA" />
                 <ScalarProperty Name="MO_TA_SAU_CHINH_SUA" ColumnName="MO_TA_SAU_CHINH_SUA" />
                 <ScalarProperty Name="ID_DANH_MUC_SAU_CHINH_SUA" ColumnName="ID_DANH_MUC_SAU_CHINH_SUA" />
-                <ScalarProperty Name="NGUOI_CHINH_SUA" ColumnName="NGUOI_CHINH_SUA" />
+                <ScalarProperty Name="ID_TAI_KHOAN" ColumnName="ID_TAI_KHOAN" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -609,14 +612,14 @@
             <EntityTypeMapping TypeName="DIEUBANTHUONGHOIWEBSITEModel.LICH_SU_CHINH_SUA_DANH_MUC">
               <MappingFragment StoreEntitySet="LICH_SU_CHINH_SUA_DANH_MUC">
                 <ScalarProperty Name="ID" ColumnName="ID" />
-                <ScalarProperty Name="TEN_DANH_MUC_TRUOC_CHINH_SUA" ColumnName="TEN_DANH_MUC_TRUOC_CHINH_SUA" />
+                <ScalarProperty Name="DANH_MUC_TRUOC_CHINH_SUA" ColumnName="DANH_MUC_TRUOC_CHINH_SUA" />
                 <ScalarProperty Name="MO_TA_TRUOC_CHINH_SUA" ColumnName="MO_TA_TRUOC_CHINH_SUA" />
                 <ScalarProperty Name="NGAY_CHINH_SUA" ColumnName="NGAY_CHINH_SUA" />
                 <ScalarProperty Name="HINH_ANH_TRUOC_CHINH_SUA" ColumnName="HINH_ANH_TRUOC_CHINH_SUA" />
-                <ScalarProperty Name="TEN_DANH_MUC_SAU_CHINH_SUA" ColumnName="TEN_DANH_MUC_SAU_CHINH_SUA" />
+                <ScalarProperty Name="DANH_MUC_SAU_CHINH_SUA" ColumnName="DANH_MUC_SAU_CHINH_SUA" />
                 <ScalarProperty Name="MO_TA_SAU_CHINH_SUA" ColumnName="MO_TA_SAU_CHINH_SUA" />
                 <ScalarProperty Name="HINH_ANH_SAU_CHINH_SUA" ColumnName="HINH_ANH_SAU_CHINH_SUA" />
-                <ScalarProperty Name="NGUOI_CHINH_SUA" ColumnName="NGUOI_CHINH_SUA" />
+                <ScalarProperty Name="ID_TAI_KHOAN" ColumnName="ID_TAI_KHOAN" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -641,7 +644,7 @@
             <EntityTypeMapping TypeName="DIEUBANTHUONGHOIWEBSITEModel.QUYEN_CUA_USER">
               <MappingFragment StoreEntitySet="QUYEN_CUA_USER">
                 <ScalarProperty Name="ID" ColumnName="ID" />
-                <ScalarProperty Name="ID_NGUOI_DUNG" ColumnName="ID_NGUOI_DUNG" />
+                <ScalarProperty Name="ID_TAI_KHOAN" ColumnName="ID_TAI_KHOAN" />
                 <ScalarProperty Name="ID_QUYEN" ColumnName="ID_QUYEN" />
               </MappingFragment>
             </EntityTypeMapping>
@@ -664,7 +667,7 @@
                 <ScalarProperty Name="AVATAR" ColumnName="AVATAR" />
                 <ScalarProperty Name="MAT_KHAU" ColumnName="MAT_KHAU" />
                 <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
-                <ScalarProperty Name="MA_SO" ColumnName="MA_SO" />
+                <ScalarProperty Name="MA_SO_NGUOI_DUNG" ColumnName="MA_SO_NGUOI_DUNG" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

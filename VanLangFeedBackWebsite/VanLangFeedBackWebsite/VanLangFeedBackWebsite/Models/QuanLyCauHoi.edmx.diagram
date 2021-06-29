@@ -4,17 +4,17 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="9e70b38d64fb4729a8c504981f58c063" Name="Diagram1">
+      <Diagram DiagramId="1194d85194df4325877917c93a9d4690" Name="Diagram1">
         <EntityTypeShape EntityType="DIEUBANTHUONGHOIWEBSITEModel.CAU_HOI" Width="1.5" PointX="5.25" PointY="8.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="DIEUBANTHUONGHOIWEBSITEModel.CAU_TRA_LOI" Width="1.5" PointX="7.5" PointY="8.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="DIEUBANTHUONGHOIWEBSITEModel.DANH_MUC" Width="1.5" PointX="3" PointY="8.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="DIEUBANTHUONGHOIWEBSITEModel.LICH_SU_CHINH_SUA_CAU_HOI" Width="1.5" PointX="3" PointY="11.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="DIEUBANTHUONGHOIWEBSITEModel.LICH_SU_CHINH_SUA_DANH_MUC" Width="1.5" PointX="3" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DIEUBANTHUONGHOIWEBSITEModel.CAU_TRA_LOI" Width="1.5" PointX="7.5" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DIEUBANTHUONGHOIWEBSITEModel.DANH_MUC" Width="1.5" PointX="3" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DIEUBANTHUONGHOIWEBSITEModel.LICH_SU_CHINH_SUA_CAU_HOI" Width="1.5" PointX="3" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DIEUBANTHUONGHOIWEBSITEModel.LICH_SU_CHINH_SUA_DANH_MUC" Width="1.5" PointX="3" PointY="15.875" IsExpanded="true" />
         <EntityTypeShape EntityType="DIEUBANTHUONGHOIWEBSITEModel.LUOT_TIM_TU_KHOA" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DIEUBANTHUONGHOIWEBSITEModel.QUYEN" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
-        <EntityTypeShape EntityType="DIEUBANTHUONGHOIWEBSITEModel.QUYEN_CUA_USER" Width="1.5" PointX="3" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DIEUBANTHUONGHOIWEBSITEModel.QUYEN" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DIEUBANTHUONGHOIWEBSITEModel.QUYEN_CUA_USER" Width="1.5" PointX="3" PointY="6" IsExpanded="true" />
         <EntityTypeShape EntityType="DIEUBANTHUONGHOIWEBSITEModel.sysdiagram" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DIEUBANTHUONGHOIWEBSITEModel.TAI_KHOAN" Width="1.5" PointX="0.75" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DIEUBANTHUONGHOIWEBSITEModel.TAI_KHOAN" Width="1.5" PointX="0.75" PointY="8.375" IsExpanded="true" />
         <AssociationConnector Association="DIEUBANTHUONGHOIWEBSITEModel.FK_CAU_HOI_DANH_MUC" ManuallyRouted="false" />
         <AssociationConnector Association="DIEUBANTHUONGHOIWEBSITEModel.FK_CAU_HOI_TAI_KHOAN" ManuallyRouted="false" />
         <AssociationConnector Association="DIEUBANTHUONGHOIWEBSITEModel.FK_CAU_TRA_LOI_CAU_HOI" ManuallyRouted="false" />

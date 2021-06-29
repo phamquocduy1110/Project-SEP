@@ -39,11 +39,11 @@ namespace VanLangFeedBackWebsite.Areas.Admin.Controllers
         {
             var question = new CAU_HOI();
 
-            question.TEN_CAU_HOI = f.TEN_CAU_HOI;
+            question.CAU_HOI1 = f.CAU_HOI1;
             question.MO_TA = f.MO_TA;
             question.ID_DANH_MUC = f.ID_DANH_MUC;
             question.NGAY_TAO = DateTime.Now;
-            question.NGUOI_DANG = f.NGUOI_DANG;
+            question.ID_TAI_KHOAN = f.ID_TAI_KHOAN;
             model.CAU_HOI.Add(question);
             model.SaveChanges();
             return RedirectToAction("Index");

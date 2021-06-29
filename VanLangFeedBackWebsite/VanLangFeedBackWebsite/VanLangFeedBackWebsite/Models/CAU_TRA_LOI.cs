@@ -17,8 +17,8 @@ namespace VanLangFeedBackWebsite.Models
         public int ID { get; set; }
         public int ID_CAU_HOI { get; set; }
         public string CAU_TRA_LOI1 { get; set; }
-        public System.DateTime NGAY_TRA_LOI { get; set; }
-        public int NGUOI_TRA_LOI { get; set; }
+        public Nullable<System.DateTime> NGAY_TRA_LOI { get; set; }
+        public int ID_TAI_KHOAN { get; set; }
     
         public virtual CAU_HOI CAU_HOI { get; set; }
         public virtual TAI_KHOAN TAI_KHOAN { get; set; }

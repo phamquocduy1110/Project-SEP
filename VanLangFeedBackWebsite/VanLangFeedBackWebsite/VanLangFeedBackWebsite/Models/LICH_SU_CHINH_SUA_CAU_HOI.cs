@@ -15,14 +15,14 @@ namespace VanLangFeedBackWebsite.Models
     public partial class LICH_SU_CHINH_SUA_CAU_HOI
     {
         public int ID { get; set; }
-        public string TEN_CAU_HOI_TRUOC_CHINH_SUA { get; set; }
+        public string CAU_HOI_TRUOC_CHINH_SUA { get; set; }
         public string MO_TA_TRUOC_CHINH_SUA { get; set; }
-        public System.DateTime NGAY_CHINH_SUA { get; set; }
+        public Nullable<System.DateTime> NGAY_CHINH_SUA { get; set; }
         public int ID_DANH_MUC_TRUOC_CHINH_SUA { get; set; }
-        public string TEN_CAU_HOI_SAU_CHINH_SUA { get; set; }
+        public string CAU_HOI_SAU_CHINH_SUA { get; set; }
         public string MO_TA_SAU_CHINH_SUA { get; set; }
         public int ID_DANH_MUC_SAU_CHINH_SUA { get; set; }
-        public int NGUOI_CHINH_SUA { get; set; }
+        public int ID_TAI_KHOAN { get; set; }
     
         public virtual TAI_KHOAN TAI_KHOAN { get; set; }
     }

@@ -589,6 +589,7 @@
     <Content Include="Areas\Admin\Views\ManageQuestions\Create.cshtml" />
     <Content Include="Areas\Admin\Views\ManageCatalog\Index.cshtml" />
     <Content Include="Areas\Admin\Views\ManageQuestions\Create2.cshtml" />
+    <Content Include="Areas\Admin\Views\ManageCatalog\Create.cshtml" />
     <EntityDeploy Include="Models\QuanLyCauHoi.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>QuanLyCauHoi.Designer.cs</LastGenOutput>
@@ -596,6 +597,9 @@
     <Content Include="Models\QuanLyCauHoi.edmx.diagram">
       <DependentUpon>QuanLyCauHoi.edmx</DependentUpon>
     </Content>
+    <Content Include="Areas\Admin\Views\ManageCatalog\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\ManageCatalog\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\ManageCatalog\Details.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />

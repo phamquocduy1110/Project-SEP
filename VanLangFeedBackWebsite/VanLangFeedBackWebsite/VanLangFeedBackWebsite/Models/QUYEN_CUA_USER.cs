@@ -15,7 +15,7 @@ namespace VanLangFeedBackWebsite.Models
     public partial class QUYEN_CUA_USER
     {
         public int ID { get; set; }
-        public int ID_NGUOI_DUNG { get; set; }
+        public int ID_TAI_KHOAN { get; set; }
         public int ID_QUYEN { get; set; }
     
         public virtual QUYEN QUYEN { get; set; }

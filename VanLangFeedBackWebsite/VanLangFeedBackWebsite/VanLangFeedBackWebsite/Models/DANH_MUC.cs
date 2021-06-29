@@ -21,11 +21,11 @@ namespace VanLangFeedBackWebsite.Models
         }
     
         public int ID { get; set; }
-        public string TEN_DANH_MUC { get; set; }
+        public string DANH_MUC1 { get; set; }
         public string MO_TA { get; set; }
         public string HINH_ANH { get; set; }
-        public System.DateTime NGAY_TAO { get; set; }
-        public int NGUOI_TAO { get; set; }
+        public Nullable<System.DateTime> NGAY_TAO { get; set; }
+        public int ID_TAI_KHOAN { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CAU_HOI> CAU_HOI { get; set; }
