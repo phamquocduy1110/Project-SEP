@@ -1,0 +1,71 @@
+﻿<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Labs - Design Studio">
+    <meta name="keywords" content="lab, onepage, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link href="@Url.Content("~/Assets/images/logo/VanLangLogoPage.png")" rel="shortcut icon" />
+
+    <!-- Google Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Viga' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="@Url.Content("//fonts.googleapis.com/css?family=Oswald:300,400,500,700|Roboto:300,400,700")" rel="stylesheet">
+    <link href="@Url.Content("~/Assets/css/AdminIndexCss/font-face.css")" rel="stylesheet" media="all">
+    <link href="@Url.Content("~/Assets/vendor/AdminIndexVendor/font-awesome-4.7/css/font-awesome.min.css")" rel="stylesheet" media="all">
+    <link href="@Url.Content("~/Assets/vendor/AdminIndexVendor/font-awesome-5/css/fontawesome-all.min.css")" rel="stylesheet" media="all">
+    <link href="@Url.Content("~/Assets/vendor/AdminIndexVendor/mdi-font/css/material-design-iconic-font.min.css")" rel="stylesheet" media="all">
+
+
+    <link rel="stylesheet" href="@Url.Content("~/Assets/css/UserPageCss/bootstrap.min.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/Assets/css/UserPageCss/font-awesome.min.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/Assets/css/UserPageCss/flaticon.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/Assets/css/UserPageCss/magnific-popup.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/Assets/css/UserPageCss/owl.carousel.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/Assets/css/UserPageCss/style.css")" />
+</head>
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader">
+            <img src="@Url.Content("~/Assets/images/logo/LoadingLogo.png")" alt="">
+            <h2>Loading.....</h2>
+        </div>
+    </div>
+
+    <!-- Header section -->
+    <div class="navbar navbar-inverse navbar-fixed-top" style="position: fixed; background-color: white; border-color: white">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="@Url.Action("Index", "Home")" style="padding: 15px 15px">
+                    <img src="@Url.Content("~/Assets/images/logo/VanLangLogoMenu.png")">
+                </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="@Url.Action("Index", "Home")" style="background-color:white; color: black; margin-right:0px">Trang Chủ</a></li>
+                    <li><a href="@Url.Action("Index", "Services")" style="margin-right: 0px">Dịch vụ</a></li>
+                    <li><a href="@Url.Action("Index", "Questions")" style="margin-right: 0px">Câu hỏi thường gặp</a></li>
+                    <li><a href="@Url.Action("Contact", "Home")" style="margin-right: 0px">Liên hệ</a></li>
+                    <li><a href="@Url.Action("Index", "Statistical")" style="margin-right: 0px">Thống kê</a></li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <!-- Header section end -->
+    @RenderBody()
+
+    <!--====== Javascripts & Jquery ======-->
+    <script src="@Url.Content("~/Assets/js/UserPageJS/jquery-2.1.4.min.js")"></script>
+    <script src="@Url.Content("~/Assets/js/UserPageJS/bootstrap.min.js")"></script>
+    <script src="@Url.Content("~/Assets/js/UserPageJS/magnific-popup.min.js")"></script>
+    <script src="@Url.Content("~/Assets/js/UserPageJS/owl.carousel.min.js")"></script>
+    <script src="@Url.Content("~/Assets/js/UserPageJS/circle-progress.min.js")"></script>
+    <script src="@Url.Content("~/Assets/js/UserPageJS/main.js")"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
