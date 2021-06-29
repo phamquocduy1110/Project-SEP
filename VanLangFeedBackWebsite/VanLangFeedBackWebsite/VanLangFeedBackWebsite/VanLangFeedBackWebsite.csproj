@@ -586,6 +586,9 @@
     <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\Admin\Views\UsersRole\Index.cshtml" />
     <Content Include="Areas\Admin\Views\AdminAccount\SignOutCallback.cshtml" />
+    <Content Include="Areas\Admin\Views\ManageQuestions\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\ManageCatalog\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\ManageQuestions\Create2.cshtml" />
     <EntityDeploy Include="Models\QuanLyCauHoi.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>QuanLyCauHoi.Designer.cs</LastGenOutput>
@@ -593,7 +596,6 @@
     <Content Include="Models\QuanLyCauHoi.edmx.diagram">
       <DependentUpon>QuanLyCauHoi.edmx</DependentUpon>
     </Content>
-    <Content Include="Areas\Admin\Views\ManageQuestions\Create.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -630,7 +632,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Data\" />
-    <Folder Include="Areas\Admin\Views\ManageCatalog\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

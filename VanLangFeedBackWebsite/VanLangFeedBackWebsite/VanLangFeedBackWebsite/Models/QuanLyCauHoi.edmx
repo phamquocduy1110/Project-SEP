@@ -12,7 +12,7 @@
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="TEN_CAU_HOI" Type="nvarchar(max)" Nullable="false" />
           <Property Name="MO_TA" Type="nvarchar(max)" />
-          <Property Name="NGAY_TAO" Type="datetime" Nullable="false" />
+          <Property Name="NGAY_TAO" Type="datetime2" Precision="7" Nullable="false" />
           <Property Name="ID_DANH_MUC" Type="int" Nullable="false" />
           <Property Name="NGUOI_DANG" Type="int" Nullable="false" />
           <Property Name="LUOT_XEM" Type="int" Nullable="false" />
@@ -24,7 +24,7 @@
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="ID_CAU_HOI" Type="int" Nullable="false" />
           <Property Name="CAU_TRA_LOI" Type="nvarchar(max)" />
-          <Property Name="NGAY_TRA_LOI" Type="datetime" Nullable="false" />
+          <Property Name="NGAY_TRA_LOI" Type="datetime2" Precision="7" Nullable="false" />
           <Property Name="NGUOI_TRA_LOI" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="DANH_MUC">
@@ -35,7 +35,7 @@
           <Property Name="TEN_DANH_MUC" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="MO_TA" Type="nvarchar(max)" />
           <Property Name="HINH_ANH" Type="nvarchar(max)" Nullable="false" />
-          <Property Name="NGAY_TAO" Type="datetime" Nullable="false" />
+          <Property Name="NGAY_TAO" Type="datetime2" Precision="7" Nullable="false" />
           <Property Name="NGUOI_TAO" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="LICH_SU_CHINH_SUA_CAU_HOI">
@@ -45,7 +45,7 @@
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="TEN_CAU_HOI_TRUOC_CHINH_SUA" Type="nvarchar(max)" Nullable="false" />
           <Property Name="MO_TA_TRUOC_CHINH_SUA" Type="nvarchar(max)" />
-          <Property Name="NGAY_CHINH_SUA" Type="datetime" Nullable="false" />
+          <Property Name="NGAY_CHINH_SUA" Type="datetime2" Precision="7" Nullable="false" />
           <Property Name="ID_DANH_MUC_TRUOC_CHINH_SUA" Type="int" Nullable="false" />
           <Property Name="TEN_CAU_HOI_SAU_CHINH_SUA" Type="nvarchar(max)" Nullable="false" />
           <Property Name="MO_TA_SAU_CHINH_SUA" Type="nvarchar(max)" />
@@ -59,7 +59,7 @@
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="TEN_DANH_MUC_TRUOC_CHINH_SUA" Type="nvarchar(max)" Nullable="false" />
           <Property Name="MO_TA_TRUOC_CHINH_SUA" Type="nvarchar(max)" />
-          <Property Name="NGAY_CHINH_SUA" Type="datetime" Nullable="false" />
+          <Property Name="NGAY_CHINH_SUA" Type="datetime2" Precision="7" Nullable="false" />
           <Property Name="HINH_ANH_TRUOC_CHINH_SUA" Type="nvarchar(max)" Nullable="false" />
           <Property Name="TEN_DANH_MUC_SAU_CHINH_SUA" Type="nvarchar(max)" Nullable="false" />
           <Property Name="MO_TA_SAU_CHINH_SUA" Type="nvarchar(max)" />
@@ -277,7 +277,7 @@
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="TEN_CAU_HOI" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="MO_TA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="NGAY_TAO" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="NGAY_TAO" Type="DateTime" Nullable="false" Precision="7" />
           <Property Name="ID_DANH_MUC" Type="Int32" Nullable="false" />
           <Property Name="NGUOI_DANG" Type="Int32" Nullable="false" />
           <Property Name="LUOT_XEM" Type="Int32" Nullable="false" />
@@ -292,7 +292,7 @@
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="ID_CAU_HOI" Type="Int32" Nullable="false" />
           <Property Name="CAU_TRA_LOI1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="NGAY_TRA_LOI" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="NGAY_TRA_LOI" Type="DateTime" Nullable="false" Precision="7" />
           <Property Name="NGUOI_TRA_LOI" Type="Int32" Nullable="false" />
           <NavigationProperty Name="CAU_HOI" Relationship="Self.FK_CAU_TRA_LOI_CAU_HOI" FromRole="CAU_TRA_LOI" ToRole="CAU_HOI" />
           <NavigationProperty Name="TAI_KHOAN" Relationship="Self.FK_CAU_TRA_LOI_TAI_KHOAN" FromRole="CAU_TRA_LOI" ToRole="TAI_KHOAN" />
@@ -305,7 +305,7 @@
           <Property Name="TEN_DANH_MUC" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="MO_TA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="HINH_ANH" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="NGAY_TAO" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="NGAY_TAO" Type="DateTime" Nullable="false" Precision="7" />
           <Property Name="NGUOI_TAO" Type="Int32" Nullable="false" />
           <NavigationProperty Name="CAU_HOI" Relationship="Self.FK_CAU_HOI_DANH_MUC" FromRole="DANH_MUC" ToRole="CAU_HOI" />
           <NavigationProperty Name="TAI_KHOAN" Relationship="Self.FK_DANH_MUC_TAI_KHOAN" FromRole="DANH_MUC" ToRole="TAI_KHOAN" />
@@ -317,7 +317,7 @@
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="TEN_CAU_HOI_TRUOC_CHINH_SUA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="MO_TA_TRUOC_CHINH_SUA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="NGAY_CHINH_SUA" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="NGAY_CHINH_SUA" Type="DateTime" Nullable="false" Precision="7" />
           <Property Name="ID_DANH_MUC_TRUOC_CHINH_SUA" Type="Int32" Nullable="false" />
           <Property Name="TEN_CAU_HOI_SAU_CHINH_SUA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="MO_TA_SAU_CHINH_SUA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
@@ -332,7 +332,7 @@
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="TEN_DANH_MUC_TRUOC_CHINH_SUA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="MO_TA_TRUOC_CHINH_SUA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="NGAY_CHINH_SUA" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="NGAY_CHINH_SUA" Type="DateTime" Nullable="false" Precision="7" />
           <Property Name="HINH_ANH_TRUOC_CHINH_SUA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="TEN_DANH_MUC_SAU_CHINH_SUA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="MO_TA_SAU_CHINH_SUA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />

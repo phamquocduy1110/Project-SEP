@@ -42,6 +42,7 @@ namespace VanLangFeedBackWebsite.Areas.Admin.Controllers
             question.TEN_CAU_HOI = f.TEN_CAU_HOI;
             question.MO_TA = f.MO_TA;
             question.ID_DANH_MUC = f.ID_DANH_MUC;
+            question.NGAY_TAO = DateTime.Now;
             question.NGUOI_DANG = f.NGUOI_DANG;
             model.CAU_HOI.Add(question);
             model.SaveChanges();

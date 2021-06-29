@@ -9,11 +9,12 @@ namespace VanLangFeedBackWebsite.Areas.Admin.Controllers
 {
     public class ManageCatalogController : Controller
     {
-
+        DIEUBANTHUONGHOIWEBSITEEntities model = new DIEUBANTHUONGHOIWEBSITEEntities();
         // GET: Admin/AdminManageCatalog
         public ActionResult Index()
         {
-            return View();
+            var category = model.DANH_MUC.ToList().OrderByDescending(x => x.ID).ToList();
+            return View(category);
         }
     }
 }

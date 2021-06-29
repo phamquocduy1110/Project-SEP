@@ -23,7 +23,7 @@ namespace VanLangFeedBackWebsite.Models
         public int ID { get; set; }
         public string TEN_CAU_HOI { get; set; }
         public string MO_TA { get; set; }
-        public System.DateTime NGAY_TAO { get; set; }
+        public Nullable<System.DateTime> NGAY_TAO { get; set; }
         public int ID_DANH_MUC { get; set; }
         public int NGUOI_DANG { get; set; }
         public int LUOT_XEM { get; set; }
