@@ -191,6 +191,7 @@
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\AdminAccountController.cs" />
     <Compile Include="Areas\Admin\Controllers\AdminHomeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\UIElementsController.cs" />
     <Compile Include="Areas\Admin\Controllers\ManageCatalogController.cs" />
     <Compile Include="Areas\Admin\Controllers\ManageQuestionsController.cs" />
     <Compile Include="Areas\Admin\Controllers\UsersRoleController.cs" />
@@ -262,6 +263,7 @@
     <Content Include="Assets\css\AdminPageCss\dataTables.bootstrap4.css" />
     <Content Include="Assets\css\AdminPageCss\fullcalendar.min.css" />
     <Content Include="Assets\css\AdminPageCss\jquery-jvectormap-2.0.2.css" />
+    <Content Include="Assets\css\AdminPageCss\prism.css" />
     <Content Include="Assets\css\AdminPageCss\style.min.css" />
     <Content Include="Assets\css\LoginCss\bootstrap.min.css" />
     <Content Include="Assets\css\LoginCss\font.css" />
@@ -346,6 +348,7 @@
     <Content Include="Assets\js\AdminPageJS\moment.min.js" />
     <Content Include="Assets\js\AdminPageJS\perfect-scrollbar.jquery.min.js" />
     <Content Include="Assets\js\AdminPageJS\popper.min.js" />
+    <Content Include="Assets\js\AdminPageJS\prism.js" />
     <Content Include="Assets\js\AdminPageJS\sidebarmenu.js" />
     <Content Include="Assets\js\AdminPageJS\sparkline.js" />
     <Content Include="Assets\js\LoginJS\bootstrap.min.js" />
@@ -588,7 +591,6 @@
     <Content Include="Areas\Admin\Views\AdminAccount\SignOutCallback.cshtml" />
     <Content Include="Areas\Admin\Views\ManageQuestions\Create.cshtml" />
     <Content Include="Areas\Admin\Views\ManageCatalog\Index.cshtml" />
-    <Content Include="Areas\Admin\Views\ManageQuestions\Create2.cshtml" />
     <Content Include="Areas\Admin\Views\ManageCatalog\Create.cshtml" />
     <EntityDeploy Include="Models\QuanLyCauHoi.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -600,6 +602,7 @@
     <Content Include="Areas\Admin\Views\ManageCatalog\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\ManageCatalog\Delete.cshtml" />
     <Content Include="Areas\Admin\Views\ManageCatalog\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\UIElements\Index.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -636,6 +639,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\Admin\Views\AdminUIElements\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

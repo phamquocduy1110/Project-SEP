@@ -88,9 +88,15 @@
                                                         @Html.DisplayFor(modelItem => item.TAI_KHOAN.EMAIL)
                                                     </td>
                                                     <td>
-                                                        @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
-                                                        @Html.ActionLink("Details", "Details", new { id = item.ID }) |
-                                                        @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                                                        <a href="@Url.Action("Edit", new { id = item.ID })" class="btn btn-success btn-circle">
+                                                            <i class="fa fa-link"></i>
+                                                        </a>
+                                                        <a href="@Url.Action("Details", new { id = item.ID })" class="btn btn-primary btn-circle">
+                                                            <i class="fa fa-list"></i>
+                                                        </a>
+                                                        <a href="@Url.Action("Delete", new { id = item.ID })" class="btn btn-danger btn-circle">
+                                                            <i class="fa fa-times"></i>
+                                                        </a>
                                                     </td>
                                                 </tr>
                                             }
