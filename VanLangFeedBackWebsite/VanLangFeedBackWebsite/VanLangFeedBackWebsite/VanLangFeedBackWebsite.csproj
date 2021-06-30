@@ -603,6 +603,9 @@
     <Content Include="Areas\Admin\Views\ManageCatalog\Delete.cshtml" />
     <Content Include="Areas\Admin\Views\ManageCatalog\Details.cshtml" />
     <Content Include="Areas\Admin\Views\UIElements\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\ManageQuestions\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\ManageQuestions\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\ManageQuestions\Delete.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />

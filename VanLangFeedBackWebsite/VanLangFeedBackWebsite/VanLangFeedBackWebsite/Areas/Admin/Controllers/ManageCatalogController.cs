@@ -84,6 +84,7 @@ namespace VanLangFeedBackWebsite.Areas.Admin.Controllers
             return RedirectToAction("Index");
         }
 
+        // GET: DANH_MUC / AdminManageCatalog
         [HttpGet, ValidateInput(false)]
         public ActionResult Details(int id)
         {

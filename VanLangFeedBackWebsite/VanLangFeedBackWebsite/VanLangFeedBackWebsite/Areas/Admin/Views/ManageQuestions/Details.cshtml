@@ -1,12 +1,12 @@
-﻿@model VanLangFeedBackWebsite.Models.DANH_MUC
+﻿@model VanLangFeedBackWebsite.Models.CAU_HOI
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 @{
-    ViewBag.Title = "Delete";
+    ViewBag.Title = "Details";
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }
 <head>
-    <title>Xóa danh mục</title>
+    <title>Chi tiết câu hỏi</title>
 </head>
 
 <body>
@@ -23,12 +23,12 @@
                 <div class="page-breadcrumb">
                     <div class="row">
                         <div class="col-7 align-self-center">
-                            <h3 class="page-title text-truncate text-dark font-weight-medium mb-1">Bạn có chắc là muốn xóa danh mục này?</h3>
+                            <h3 class="page-title text-truncate text-dark font-weight-medium mb-1">Chi tiết nội dung câu hỏi</h3>
                             <div class="d-flex align-items-center">
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb m-0 p-0">
                                         <li class="breadcrumb-item"><a href="@Url.Action("Index", "ManageCatalog")" class="text-muted">Quay lại</a></li>
-                                        <li class="breadcrumb-item text-muted active" aria-current="page">Xóa danh mục</li>
+                                        <li class="breadcrumb-item text-muted active" aria-current="page">Chi tiết câu hỏi</li>
                                     </ol>
                                 </nav>
                             </div>
@@ -41,10 +41,10 @@
                         <div class="card">
                             <div class="card-body collapse show">
                                 <h4 class="card-title">
-                                    Danh mục
+                                    Tên câu hỏi
                                 </h4>
                                 <p class="card-text">
-                                    @Html.DisplayFor(model => model.DANH_MUC1)
+                                    @Html.DisplayFor(model => model.CAU_HOI1)
                                 </p>
                             </div>
                         </div>
@@ -73,10 +73,10 @@
                         <div class="card">
                             <div class="card-body collapse show">
                                 <h4 class="card-title">
-                                    Hình ảnh
+                                    Danh mục
                                 </h4>
                                 <p class="card-text">
-                                    @Html.DisplayFor(model => model.HINH_ANH)
+                                    @Html.DisplayFor(model => model.DANH_MUC.DANH_MUC1)
                                 </p>
                             </div>
                         </div>
@@ -115,20 +115,17 @@
                     </div>
                 </div>
                 <!-- End Row -->
-                @using (Html.BeginForm())
-                {
-                    @Html.AntiForgeryToken()
-
-                    <div class="row">
-                        <div class="customize-input float-left">
-                            <input type="submit" value="Xóa danh mục" style="color: green" class="custom-select custom-select-set form-control bg-white border-0 custom-shadow custom-radius" />
-                        </div>
-
-                        <div class="customize-input float-right" style="margin-left: 10px">
-                            <input type="button" value="Hủy bỏ" onclick="location.href='@Url.Action("Index", "ManageCatalog")'" style="color: red" class="custom-select custom-select-set form-control bg-white border-0 custom-shadow custom-radius" />
-                        </div>
+                <div class="row">
+                    <div class="customize-input float-left">
+                        <a href="@Url.Action("Edit", new { id = Model.ID })" style="color: green" class="custom-select custom-select-set form-control bg-white border-0 custom-shadow custom-radius">
+                            Chỉnh sửa
+                        </a>
                     </div>
-                }
+
+                    <div class="customize-input float-right" style="margin-left: 10px">
+                        <input type="button" value="Hủy bỏ" onclick="location.href='@Url.Action("Index", "ManageQuestions")'" style="color: red" class="custom-select custom-select-set form-control bg-white border-0 custom-shadow custom-radius" />
+                    </div>
+                </div>
                 <!-- ============================================================== -->
                 <!-- End PAge Content -->
                 <!-- ============================================================== -->
