@@ -11,12 +11,13 @@ namespace VanLangFeedBackWebsite.Controllers
     {
         DIEUBANTHUONGHOIWEBSITEEntities model = new DIEUBANTHUONGHOIWEBSITEEntities();
 
+        [AllowAnonymous]
         public ActionResult Search(string keyword)
         {
             var search = model.CAU_HOI.ToList();
-            search = search.Where(p => p.CAU_HOI1.ToLower().Contains(keyword.ToLower())).ToList();
+            search = search.Where(x => x.CAU_HOI1.ToLower().Contains(keyword.ToLower())).ToList();
             ViewBag.keyword = keyword;
-            return View("Index2", search);
+            return View("Index", search);
         }
 
         // GET: Questions
