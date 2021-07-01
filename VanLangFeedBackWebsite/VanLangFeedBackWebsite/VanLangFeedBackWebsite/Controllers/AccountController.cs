@@ -9,9 +9,18 @@ using Microsoft.Owin.Security;
 
 namespace VanLangFeedBackWebsite.Controllers
 {
+    [Authorize]
     public class AccountController : Controller
     {
-        public void SignIn()
+        // GET: /Account/Login
+        [AllowAnonymous]
+        public ActionResult SignIn(string returnUrl)
+        {
+            ViewBag.ReturnUrl = returnUrl;
+            return View();
+        }
+
+/*        public void SignIn()
         {
             // Send an OpenID Connect sign-in request.
             if (!Request.IsAuthenticated)
@@ -40,5 +49,5 @@ namespace VanLangFeedBackWebsite.Controllers
 
             return View();
         }
-    }
+*/  }
 }

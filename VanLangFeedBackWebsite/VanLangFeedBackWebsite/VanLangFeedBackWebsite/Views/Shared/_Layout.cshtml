@@ -46,12 +46,13 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="@Url.Action("Index", "Home")" style="background-color:white; color: black; margin-right:0px">Trang Chủ</a></li>
-                    <li><a href="@Url.Action("Index", "Services")" style="margin-right: 0px">Dịch vụ</a></li>
-                    <li><a href="@Url.Action("Index", "Questions")" style="margin-right: 0px">Câu hỏi thường gặp</a></li>
-                    <li><a href="@Url.Action("Contact", "Home")" style="margin-right: 0px">Liên hệ</a></li>
-                    <li><a href="@Url.Action("Index", "Statistical")" style="margin-right: 0px">Thống kê</a></li>
+                    <li><a href="@Url.Action("Index", "Home")">Trang Chủ</a></li>
+                    <li><a href="@Url.Action("Index", "Services")">Dịch vụ</a></li>
+                    <li><a href="@Url.Action("Index", "Questions")">Câu hỏi thường gặp</a></li>
+                    <li><a href="@Url.Action("Contact", "Home")">Liên hệ</a></li>
+                    <li><a href="@Url.Action("Index", "Statistical")">Thống kê</a></li>
                 </ul>
+                @Html.Partial("_LoginPartial")
             </div>
         </div>
     </div>
