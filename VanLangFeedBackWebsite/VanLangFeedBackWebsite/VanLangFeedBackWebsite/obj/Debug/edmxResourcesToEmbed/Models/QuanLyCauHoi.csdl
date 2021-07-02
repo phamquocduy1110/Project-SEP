@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DIEUBANTHUONGHOIWEBSITEModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CAU_HOI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CAU_HOI1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MO_TA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NGAY_TAO" Type="DateTime" Precision="7" />
+    <Property Name="ID_DANH_MUC" Type="Int32" Nullable="false" />
+    <Property Name="ID_TAI_KHOAN" Type="Int32" Nullable="false" />
+    <Property Name="LUOT_XEM" Type="Int32" Nullable="false" />
+    <Property Name="DUYET_DANG" Type="Boolean" />
+    <NavigationProperty Name="DANH_MUC" Relationship="Self.FK_CAU_HOI_DANH_MUC" FromRole="CAU_HOI" ToRole="DANH_MUC" />
+    <NavigationProperty Name="TAI_KHOAN" Relationship="Self.FK_CAU_HOI_TAI_KHOAN" FromRole="CAU_HOI" ToRole="TAI_KHOAN" />
+    <NavigationProperty Name="CAU_TRA_LOI" Relationship="Self.FK_CAU_TRA_LOI_CAU_HOI" FromRole="CAU_HOI" ToRole="CAU_TRA_LOI" />
+  </EntityType>
+  <EntityType Name="CAU_TRA_LOI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_CAU_HOI" Type="Int32" Nullable="false" />
+    <Property Name="CAU_TRA_LOI1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NGAY_TRA_LOI" Type="DateTime" Precision="7" />
+    <Property Name="ID_TAI_KHOAN" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CAU_HOI" Relationship="Self.FK_CAU_TRA_LOI_CAU_HOI" FromRole="CAU_TRA_LOI" ToRole="CAU_HOI" />
+    <NavigationProperty Name="TAI_KHOAN" Relationship="Self.FK_CAU_TRA_LOI_TAI_KHOAN" FromRole="CAU_TRA_LOI" ToRole="TAI_KHOAN" />
+  </EntityType>
+  <EntityType Name="DANH_MUC">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DANH_MUC1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MO_TA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="HINH_ANH" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NGAY_TAO" Type="DateTime" Precision="7" />
+    <Property Name="ID_TAI_KHOAN" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="CAU_HOI" Relationship="Self.FK_CAU_HOI_DANH_MUC" FromRole="DANH_MUC" ToRole="CAU_HOI" />
+    <NavigationProperty Name="TAI_KHOAN" Relationship="Self.FK_DANH_MUC_TAI_KHOAN" FromRole="DANH_MUC" ToRole="TAI_KHOAN" />
+  </EntityType>
+  <EntityType Name="LICH_SU_CHINH_SUA_CAU_HOI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CAU_HOI_TRUOC_CHINH_SUA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MO_TA_TRUOC_CHINH_SUA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NGAY_CHINH_SUA" Type="DateTime" Precision="7" />
+    <Property Name="ID_DANH_MUC_TRUOC_CHINH_SUA" Type="Int32" Nullable="false" />
+    <Property Name="CAU_HOI_SAU_CHINH_SUA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MO_TA_SAU_CHINH_SUA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ID_DANH_MUC_SAU_CHINH_SUA" Type="Int32" Nullable="false" />
+    <Property Name="ID_TAI_KHOAN" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TAI_KHOAN" Relationship="Self.FK_LICH_SU_CHINH_SUA_CAU_HOI_TAI_KHOAN" FromRole="LICH_SU_CHINH_SUA_CAU_HOI" ToRole="TAI_KHOAN" />
+  </EntityType>
+  <EntityType Name="LICH_SU_CHINH_SUA_DANH_MUC">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DANH_MUC_TRUOC_CHINH_SUA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MO_TA_TRUOC_CHINH_SUA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NGAY_CHINH_SUA" Type="DateTime" Precision="7" />
+    <Property Name="HINH_ANH_TRUOC_CHINH_SUA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DANH_MUC_SAU_CHINH_SUA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MO_TA_SAU_CHINH_SUA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="HINH_ANH_SAU_CHINH_SUA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ID_TAI_KHOAN" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TAI_KHOAN" Relationship="Self.FK_LICH_SU_CHINH_SUA_DANH_MUC_TAI_KHOAN" FromRole="LICH_SU_CHINH_SUA_DANH_MUC" ToRole="TAI_KHOAN" />
+  </EntityType>
+  <EntityType Name="LUOT_TIM_TU_KHOA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TU_KHOA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LUOT_TIM" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="QUYEN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TEN_QUYEN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="QUYEN_CUA_USER" Relationship="Self.FK_QUYEN_CUA_USER_QUYEN" FromRole="QUYEN" ToRole="QUYEN_CUA_USER" />
+  </EntityType>
+  <EntityType Name="QUYEN_CUA_USER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_TAI_KHOAN" Type="Int32" Nullable="false" />
+    <Property Name="ID_QUYEN" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="QUYEN" Relationship="Self.FK_QUYEN_CUA_USER_QUYEN" FromRole="QUYEN_CUA_USER" ToRole="QUYEN" />
+    <NavigationProperty Name="TAI_KHOAN" Relationship="Self.FK_QUYEN_CUA_USER_TAI_KHOAN" FromRole="QUYEN_CUA_USER" ToRole="TAI_KHOAN" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TAI_KHOAN">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AVATAR" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MAT_KHAU" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EMAIL" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MA_SO_NGUOI_DUNG" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="CAU_HOI" Relationship="Self.FK_CAU_HOI_TAI_KHOAN" FromRole="TAI_KHOAN" ToRole="CAU_HOI" />
+    <NavigationProperty Name="CAU_TRA_LOI" Relationship="Self.FK_CAU_TRA_LOI_TAI_KHOAN" FromRole="TAI_KHOAN" ToRole="CAU_TRA_LOI" />
+    <NavigationProperty Name="DANH_MUC" Relationship="Self.FK_DANH_MUC_TAI_KHOAN" FromRole="TAI_KHOAN" ToRole="DANH_MUC" />
+    <NavigationProperty Name="LICH_SU_CHINH_SUA_CAU_HOI" Relationship="Self.FK_LICH_SU_CHINH_SUA_CAU_HOI_TAI_KHOAN" FromRole="TAI_KHOAN" ToRole="LICH_SU_CHINH_SUA_CAU_HOI" />
+    <NavigationProperty Name="LICH_SU_CHINH_SUA_DANH_MUC" Relationship="Self.FK_LICH_SU_CHINH_SUA_DANH_MUC_TAI_KHOAN" FromRole="TAI_KHOAN" ToRole="LICH_SU_CHINH_SUA_DANH_MUC" />
+    <NavigationProperty Name="QUYEN_CUA_USER" Relationship="Self.FK_QUYEN_CUA_USER_TAI_KHOAN" FromRole="TAI_KHOAN" ToRole="QUYEN_CUA_USER" />
+  </EntityType>
+  <Association Name="FK_CAU_HOI_DANH_MUC">
+    <End Role="DANH_MUC" Type="Self.DANH_MUC" Multiplicity="1" />
+    <End Role="CAU_HOI" Type="Self.CAU_HOI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DANH_MUC">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CAU_HOI">
+        <PropertyRef Name="ID_DANH_MUC" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CAU_HOI_TAI_KHOAN">
+    <End Role="TAI_KHOAN" Type="Self.TAI_KHOAN" Multiplicity="1" />
+    <End Role="CAU_HOI" Type="Self.CAU_HOI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TAI_KHOAN">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CAU_HOI">
+        <PropertyRef Name="ID_TAI_KHOAN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CAU_TRA_LOI_CAU_HOI">
+    <End Role="CAU_HOI" Type="Self.CAU_HOI" Multiplicity="1" />
+    <End Role="CAU_TRA_LOI" Type="Self.CAU_TRA_LOI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CAU_HOI">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CAU_TRA_LOI">
+        <PropertyRef Name="ID_CAU_HOI" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CAU_TRA_LOI_TAI_KHOAN">
+    <End Role="TAI_KHOAN" Type="Self.TAI_KHOAN" Multiplicity="1" />
+    <End Role="CAU_TRA_LOI" Type="Self.CAU_TRA_LOI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TAI_KHOAN">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CAU_TRA_LOI">
+        <PropertyRef Name="ID_TAI_KHOAN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DANH_MUC_TAI_KHOAN">
+    <End Role="TAI_KHOAN" Type="Self.TAI_KHOAN" Multiplicity="1" />
+    <End Role="DANH_MUC" Type="Self.DANH_MUC" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TAI_KHOAN">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="DANH_MUC">
+        <PropertyRef Name="ID_TAI_KHOAN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LICH_SU_CHINH_SUA_CAU_HOI_TAI_KHOAN">
+    <End Role="TAI_KHOAN" Type="Self.TAI_KHOAN" Multiplicity="1" />
+    <End Role="LICH_SU_CHINH_SUA_CAU_HOI" Type="Self.LICH_SU_CHINH_SUA_CAU_HOI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TAI_KHOAN">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="LICH_SU_CHINH_SUA_CAU_HOI">
+        <PropertyRef Name="ID_TAI_KHOAN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_LICH_SU_CHINH_SUA_DANH_MUC_TAI_KHOAN">
+    <End Role="TAI_KHOAN" Type="Self.TAI_KHOAN" Multiplicity="1" />
+    <End Role="LICH_SU_CHINH_SUA_DANH_MUC" Type="Self.LICH_SU_CHINH_SUA_DANH_MUC" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TAI_KHOAN">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="LICH_SU_CHINH_SUA_DANH_MUC">
+        <PropertyRef Name="ID_TAI_KHOAN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_QUYEN_CUA_USER_QUYEN">
+    <End Role="QUYEN" Type="Self.QUYEN" Multiplicity="1" />
+    <End Role="QUYEN_CUA_USER" Type="Self.QUYEN_CUA_USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="QUYEN">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="QUYEN_CUA_USER">
+        <PropertyRef Name="ID_QUYEN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_QUYEN_CUA_USER_TAI_KHOAN">
+    <End Role="TAI_KHOAN" Type="Self.TAI_KHOAN" Multiplicity="1" />
+    <End Role="QUYEN_CUA_USER" Type="Self.QUYEN_CUA_USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TAI_KHOAN">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="QUYEN_CUA_USER">
+        <PropertyRef Name="ID_TAI_KHOAN" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DIEUBANTHUONGHOIWEBSITEEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CAU_HOI" EntityType="Self.CAU_HOI" />
+    <EntitySet Name="CAU_TRA_LOI" EntityType="Self.CAU_TRA_LOI" />
+    <EntitySet Name="DANH_MUC" EntityType="Self.DANH_MUC" />
+    <EntitySet Name="LICH_SU_CHINH_SUA_CAU_HOI" EntityType="Self.LICH_SU_CHINH_SUA_CAU_HOI" />
+    <EntitySet Name="LICH_SU_CHINH_SUA_DANH_MUC" EntityType="Self.LICH_SU_CHINH_SUA_DANH_MUC" />
+    <EntitySet Name="LUOT_TIM_TU_KHOA" EntityType="Self.LUOT_TIM_TU_KHOA" />
+    <EntitySet Name="QUYENs" EntityType="Self.QUYEN" />
+    <EntitySet Name="QUYEN_CUA_USER" EntityType="Self.QUYEN_CUA_USER" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="TAI_KHOAN" EntityType="Self.TAI_KHOAN" />
+    <AssociationSet Name="FK_CAU_HOI_DANH_MUC" Association="Self.FK_CAU_HOI_DANH_MUC">
+      <End Role="DANH_MUC" EntitySet="DANH_MUC" />
+      <End Role="CAU_HOI" EntitySet="CAU_HOI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CAU_HOI_TAI_KHOAN" Association="Self.FK_CAU_HOI_TAI_KHOAN">
+      <End Role="TAI_KHOAN" EntitySet="TAI_KHOAN" />
+      <End Role="CAU_HOI" EntitySet="CAU_HOI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CAU_TRA_LOI_CAU_HOI" Association="Self.FK_CAU_TRA_LOI_CAU_HOI">
+      <End Role="CAU_HOI" EntitySet="CAU_HOI" />
+      <End Role="CAU_TRA_LOI" EntitySet="CAU_TRA_LOI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CAU_TRA_LOI_TAI_KHOAN" Association="Self.FK_CAU_TRA_LOI_TAI_KHOAN">
+      <End Role="TAI_KHOAN" EntitySet="TAI_KHOAN" />
+      <End Role="CAU_TRA_LOI" EntitySet="CAU_TRA_LOI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DANH_MUC_TAI_KHOAN" Association="Self.FK_DANH_MUC_TAI_KHOAN">
+      <End Role="TAI_KHOAN" EntitySet="TAI_KHOAN" />
+      <End Role="DANH_MUC" EntitySet="DANH_MUC" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LICH_SU_CHINH_SUA_CAU_HOI_TAI_KHOAN" Association="Self.FK_LICH_SU_CHINH_SUA_CAU_HOI_TAI_KHOAN">
+      <End Role="TAI_KHOAN" EntitySet="TAI_KHOAN" />
+      <End Role="LICH_SU_CHINH_SUA_CAU_HOI" EntitySet="LICH_SU_CHINH_SUA_CAU_HOI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_LICH_SU_CHINH_SUA_DANH_MUC_TAI_KHOAN" Association="Self.FK_LICH_SU_CHINH_SUA_DANH_MUC_TAI_KHOAN">
+      <End Role="TAI_KHOAN" EntitySet="TAI_KHOAN" />
+      <End Role="LICH_SU_CHINH_SUA_DANH_MUC" EntitySet="LICH_SU_CHINH_SUA_DANH_MUC" />
+    </AssociationSet>
+    <AssociationSet Name="FK_QUYEN_CUA_USER_QUYEN" Association="Self.FK_QUYEN_CUA_USER_QUYEN">
+      <End Role="QUYEN" EntitySet="QUYENs" />
+      <End Role="QUYEN_CUA_USER" EntitySet="QUYEN_CUA_USER" />
+    </AssociationSet>
+    <AssociationSet Name="FK_QUYEN_CUA_USER_TAI_KHOAN" Association="Self.FK_QUYEN_CUA_USER_TAI_KHOAN">
+      <End Role="TAI_KHOAN" EntitySet="TAI_KHOAN" />
+      <End Role="QUYEN_CUA_USER" EntitySet="QUYEN_CUA_USER" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

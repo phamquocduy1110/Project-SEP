@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DIEUBANTHUONGHOIWEBSITEModelStoreContainer" CdmEntityContainer="DIEUBANTHUONGHOIWEBSITEEntities">
+    <EntitySetMapping Name="CAU_HOI">
+      <EntityTypeMapping TypeName="DIEUBANTHUONGHOIWEBSITEModel.CAU_HOI">
+        <MappingFragment StoreEntitySet="CAU_HOI">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CAU_HOI1" ColumnName="CAU_HOI" />
+          <ScalarProperty Name="MO_TA" ColumnName="MO_TA" />
+          <ScalarProperty Name="NGAY_TAO" ColumnName="NGAY_TAO" />
+          <ScalarProperty Name="ID_DANH_MUC" ColumnName="ID_DANH_MUC" />
+          <ScalarProperty Name="ID_TAI_KHOAN" ColumnName="ID_TAI_KHOAN" />
+          <ScalarProperty Name="LUOT_XEM" ColumnName="LUOT_XEM" />
+          <ScalarProperty Name="DUYET_DANG" ColumnName="DUYET_DANG" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CAU_TRA_LOI">
+      <EntityTypeMapping TypeName="DIEUBANTHUONGHOIWEBSITEModel.CAU_TRA_LOI">
+        <MappingFragment StoreEntitySet="CAU_TRA_LOI">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ID_CAU_HOI" ColumnName="ID_CAU_HOI" />
+          <ScalarProperty Name="CAU_TRA_LOI1" ColumnName="CAU_TRA_LOI" />
+          <ScalarProperty Name="NGAY_TRA_LOI" ColumnName="NGAY_TRA_LOI" />
+          <ScalarProperty Name="ID_TAI_KHOAN" ColumnName="ID_TAI_KHOAN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DANH_MUC">
+      <EntityTypeMapping TypeName="DIEUBANTHUONGHOIWEBSITEModel.DANH_MUC">
+        <MappingFragment StoreEntitySet="DANH_MUC">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DANH_MUC1" ColumnName="DANH_MUC" />
+          <ScalarProperty Name="MO_TA" ColumnName="MO_TA" />
+          <ScalarProperty Name="HINH_ANH" ColumnName="HINH_ANH" />
+          <ScalarProperty Name="NGAY_TAO" ColumnName="NGAY_TAO" />
+          <ScalarProperty Name="ID_TAI_KHOAN" ColumnName="ID_TAI_KHOAN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LICH_SU_CHINH_SUA_CAU_HOI">
+      <EntityTypeMapping TypeName="DIEUBANTHUONGHOIWEBSITEModel.LICH_SU_CHINH_SUA_CAU_HOI">
+        <MappingFragment StoreEntitySet="LICH_SU_CHINH_SUA_CAU_HOI">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CAU_HOI_TRUOC_CHINH_SUA" ColumnName="CAU_HOI_TRUOC_CHINH_SUA" />
+          <ScalarProperty Name="MO_TA_TRUOC_CHINH_SUA" ColumnName="MO_TA_TRUOC_CHINH_SUA" />
+          <ScalarProperty Name="NGAY_CHINH_SUA" ColumnName="NGAY_CHINH_SUA" />
+          <ScalarProperty Name="ID_DANH_MUC_TRUOC_CHINH_SUA" ColumnName="ID_DANH_MUC_TRUOC_CHINH_SUA" />
+          <ScalarProperty Name="CAU_HOI_SAU_CHINH_SUA" ColumnName="CAU_HOI_SAU_CHINH_SUA" />
+          <ScalarProperty Name="MO_TA_SAU_CHINH_SUA" ColumnName="MO_TA_SAU_CHINH_SUA" />
+          <ScalarProperty Name="ID_DANH_MUC_SAU_CHINH_SUA" ColumnName="ID_DANH_MUC_SAU_CHINH_SUA" />
+          <ScalarProperty Name="ID_TAI_KHOAN" ColumnName="ID_TAI_KHOAN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LICH_SU_CHINH_SUA_DANH_MUC">
+      <EntityTypeMapping TypeName="DIEUBANTHUONGHOIWEBSITEModel.LICH_SU_CHINH_SUA_DANH_MUC">
+        <MappingFragment StoreEntitySet="LICH_SU_CHINH_SUA_DANH_MUC">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DANH_MUC_TRUOC_CHINH_SUA" ColumnName="DANH_MUC_TRUOC_CHINH_SUA" />
+          <ScalarProperty Name="MO_TA_TRUOC_CHINH_SUA" ColumnName="MO_TA_TRUOC_CHINH_SUA" />
+          <ScalarProperty Name="NGAY_CHINH_SUA" ColumnName="NGAY_CHINH_SUA" />
+          <ScalarProperty Name="HINH_ANH_TRUOC_CHINH_SUA" ColumnName="HINH_ANH_TRUOC_CHINH_SUA" />
+          <ScalarProperty Name="DANH_MUC_SAU_CHINH_SUA" ColumnName="DANH_MUC_SAU_CHINH_SUA" />
+          <ScalarProperty Name="MO_TA_SAU_CHINH_SUA" ColumnName="MO_TA_SAU_CHINH_SUA" />
+          <ScalarProperty Name="HINH_ANH_SAU_CHINH_SUA" ColumnName="HINH_ANH_SAU_CHINH_SUA" />
+          <ScalarProperty Name="ID_TAI_KHOAN" ColumnName="ID_TAI_KHOAN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LUOT_TIM_TU_KHOA">
+      <EntityTypeMapping TypeName="DIEUBANTHUONGHOIWEBSITEModel.LUOT_TIM_TU_KHOA">
+        <MappingFragment StoreEntitySet="LUOT_TIM_TU_KHOA">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TU_KHOA" ColumnName="TU_KHOA" />
+          <ScalarProperty Name="LUOT_TIM" ColumnName="LUOT_TIM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QUYENs">
+      <EntityTypeMapping TypeName="DIEUBANTHUONGHOIWEBSITEModel.QUYEN">
+        <MappingFragment StoreEntitySet="QUYEN">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TEN_QUYEN" ColumnName="TEN_QUYEN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QUYEN_CUA_USER">
+      <EntityTypeMapping TypeName="DIEUBANTHUONGHOIWEBSITEModel.QUYEN_CUA_USER">
+        <MappingFragment StoreEntitySet="QUYEN_CUA_USER">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ID_TAI_KHOAN" ColumnName="ID_TAI_KHOAN" />
+          <ScalarProperty Name="ID_QUYEN" ColumnName="ID_QUYEN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="DIEUBANTHUONGHOIWEBSITEModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAI_KHOAN">
+      <EntityTypeMapping TypeName="DIEUBANTHUONGHOIWEBSITEModel.TAI_KHOAN">
+        <MappingFragment StoreEntitySet="TAI_KHOAN">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AVATAR" ColumnName="AVATAR" />
+          <ScalarProperty Name="MAT_KHAU" ColumnName="MAT_KHAU" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="MA_SO_NGUOI_DUNG" ColumnName="MA_SO_NGUOI_DUNG" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
