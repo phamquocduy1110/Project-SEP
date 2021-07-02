@@ -1,4 +1,8 @@
-﻿@model IEnumerable<VanLangFeedBackWebsite.Models.CAU_HOI>
+﻿@using VanLangFeedBackWebsite.Models;
+@using PagedList;
+@using PagedList.Mvc;
+@model PagedList.IPagedList<CAU_HOI>
+
 <!DOCTYPE html>
 <html lang="en">
 @{
@@ -51,7 +55,10 @@
                                 <p>@MvcHtmlString.Create(item.MO_TA)</p>
                             </div>
                         </div>
-                     }
+                    }
+
+                    Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount
+                    @Html.PagedListPager(Model, page => Url.Action("Index", new {page = page}))
                 </div>
                 <!-- Sidebar area -->
                 <div class="col-md-4 col-sm-5 sidebar">
@@ -67,14 +74,7 @@
                     <!-- Single widget -->
                     <div class="widget-item">
                         <h2 class="widget-title">Categories</h2>
-                        <ul>
-                            <li><a href="#">Vestibulum maximus</a></li>
-                            <li><a href="#">Nisi eu lobortis pharetra</a></li>
-                            <li><a href="#">Orci quam accumsan </a></li>
-                            <li><a href="#">Auguen pharetra massa</a></li>
-                            <li><a href="#">Tellus ut nulla</a></li>
-                            <li><a href="#">Etiam egestas viverra </a></li>
-                        </ul>
+                        @Html.Action("CategoryPartical", "Questions")
                     </div>
                     <!-- Single widget -->
                     <div class="widget-item">
