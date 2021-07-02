@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@model IEnumerable<dieubanthuonghoi.Models.FOOD>
+
+<!DOCTYPE html>
 <html lang="en">
 @{
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
@@ -13,28 +15,6 @@
 
     <!-- Title Page-->
     <title>List Questions</title>
-
-    <!-- Fontfaces CSS-->
-    <link href="@Url.Content("~/Assets/css/AdminIndexCss/font-face.css")" rel="stylesheet" media="all">
-    <link href="@Url.Content("~/Assets/vendor/AdminIndexVendor/font-awesome-4.7/css/font-awesome.min.css")" rel="stylesheet" media="all">
-    <link href="@Url.Content("~/Assets/vendor/AdminIndexVendor/font-awesome-5/css/fontawesome-all.min.css")" rel="stylesheet" media="all">
-    <link href="@Url.Content("~/Assets/vendor/AdminIndexVendor/mdi-font/css/material-design-iconic-font.min.css")" rel="stylesheet" media="all">
-
-    <!-- Bootstrap CSS-->
-    <link href="@Url.Content("~/Assets/vendor/AdminIndexVendor/bootstrap-4.1/bootstrap.min.css")" rel="stylesheet" media="all">
-
-    <!-- Vendor CSS-->
-    <link href="@Url.Content("~/Assets/vendor/AdminIndexVendor/animsition/animsition.min.css")" rel="stylesheet" media="all">
-    <link href="@Url.Content("~/Assets/vendor/AdminIndexVendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css")" rel="stylesheet" media="all">
-    <link href="@Url.Content("~/Assets/vendor/AdminIndexVendor/wow/animate.css")" rel="stylesheet" media="all">
-    <link href="@Url.Content("~/Assets/vendor/AdminIndexVendor/css-hamburgers/hamburgers.min.css")" rel="stylesheet" media="all">
-    <link href="@Url.Content("~/Assets/vendor/AdminIndexVendor/slick/slick.css")" rel="stylesheet" media="all">
-    <link href="@Url.Content("~/Assets/vendor/AdminIndexVendor/select2/select2.min.css")" rel="stylesheet" media="all">
-    <link href="@Url.Content("~/Assets/vendor/AdminIndexVendor/perfect-scrollbar/perfect-scrollbar.css")" rel="stylesheet" media="all">
-
-    <!-- Main CSS-->
-    <link href="@Url.Content("~/Assets/css/AdminIndexCss/theme.css")" rel="stylesheet" media="all">
-
 </head>
 
 <body class="animsition">
@@ -71,179 +51,60 @@
                                 </div>
                                 <div class="table-data__tool-right">
                                     <button class="au-btn au-btn-icon au-btn--green au-btn--small">
-                                        <i class="zmdi zmdi-plus"></i>add item
+                                        <i class="zmdi zmdi-plus"></i>
+                                        @Html.ActionLink("Create", "Create")
                                     </button>
-                                    <div class="rs-select2--dark rs-select2--sm rs-select2--dark2">
-                                        <select class="js-select2" name="type">
-                                            <option selected="selected">Export</option>
-                                            <option value="">Option 1</option>
-                                            <option value="">Option 2</option>
-                                        </select>
-                                        <div class="dropDownSelect2"></div>
-                                    </div>
                                 </div>
                             </div>
                             <div class="table-responsive table-responsive-data2">
                                 <table class="table table-data2">
                                     <thead>
                                         <tr>
-                                            <th>
-                                                <label class="au-checkbox">
-                                                    <input type="checkbox">
-                                                    <span class="au-checkmark"></span>
-                                                </label>
-                                            </th>
-                                            <th>name</th>
-                                            <th>email</th>
-                                            <th>description</th>
-                                            <th>date</th>
-                                            <th>status</th>
-                                            <th>price</th>
+                                            <th>Mã Món Ăn</th>
+                                            <th>Tên Món Ăn</th>
+                                            <th>Mô Tả</th>
+                                            <th>Giá</th>
+                                            <th>Hình Ảnh</th>
+                                            <th>Còn Hàng</th>
+                                            <th>Danh Mục</th>
+                                            <th>Hành Động</th>
                                             <th></th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr class="tr-shadow">
-                                            <td>
-                                                <label class="au-checkbox">
-                                                    <input type="checkbox">
-                                                    <span class="au-checkmark"></span>
-                                                </label>
-                                            </td>
-                                            <td>Lori Lynch</td>
-                                            <td>
-                                                <span class="block-email">lori@example.com</span>
-                                            </td>
-                                            <td class="desc">Samsung S8 Black</td>
-                                            <td>2018-09-27 02:12</td>
-                                            <td>
-                                                <span class="status--process">Processed</span>
-                                            </td>
-                                            <td>$679.00</td>
-                                            <td>
-                                                <div class="table-data-feature">
-                                                    <button class="item" data-toggle="tooltip" data-placement="top" title="Send">
-                                                        <i class="zmdi zmdi-mail-send"></i>
-                                                    </button>
-                                                    <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
-                                                        <i class="zmdi zmdi-edit"></i>
-                                                    </button>
-                                                    <button class="item" data-toggle="tooltip" data-placement="top" title="Delete">
-                                                        <i class="zmdi zmdi-delete"></i>
-                                                    </button>
-                                                    <button class="item" data-toggle="tooltip" data-placement="top" title="More">
-                                                        <i class="zmdi zmdi-more"></i>
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="spacer"></tr>
-                                        <tr class="tr-shadow">
-                                            <td>
-                                                <label class="au-checkbox">
-                                                    <input type="checkbox">
-                                                    <span class="au-checkmark"></span>
-                                                </label>
-                                            </td>
-                                            <td>Lori Lynch</td>
-                                            <td>
-                                                <span class="block-email">john@example.com</span>
-                                            </td>
-                                            <td class="desc">iPhone X 64Gb Grey</td>
-                                            <td>2018-09-29 05:57</td>
-                                            <td>
-                                                <span class="status--process">Processed</span>
-                                            </td>
-                                            <td>$999.00</td>
-                                            <td>
-                                                <div class="table-data-feature">
-                                                    <button class="item" data-toggle="tooltip" data-placement="top" title="Send">
-                                                        <i class="zmdi zmdi-mail-send"></i>
-                                                    </button>
-                                                    <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
-                                                        <i class="zmdi zmdi-edit"></i>
-                                                    </button>
-                                                    <button class="item" data-toggle="tooltip" data-placement="top" title="Delete">
-                                                        <i class="zmdi zmdi-delete"></i>
-                                                    </button>
-                                                    <button class="item" data-toggle="tooltip" data-placement="top" title="More">
-                                                        <i class="zmdi zmdi-more"></i>
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="spacer"></tr>
-                                        <tr class="tr-shadow">
-                                            <td>
-                                                <label class="au-checkbox">
-                                                    <input type="checkbox">
-                                                    <span class="au-checkmark"></span>
-                                                </label>
-                                            </td>
-                                            <td>Lori Lynch</td>
-                                            <td>
-                                                <span class="block-email">lyn@example.com</span>
-                                            </td>
-                                            <td class="desc">iPhone X 256Gb Black</td>
-                                            <td>2018-09-25 19:03</td>
-                                            <td>
-                                                <span class="status--denied">Denied</span>
-                                            </td>
-                                            <td>$1199.00</td>
-                                            <td>
-                                                <div class="table-data-feature">
-                                                    <button class="item" data-toggle="tooltip" data-placement="top" title="Send">
-                                                        <i class="zmdi zmdi-mail-send"></i>
-                                                    </button>
-                                                    <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
-                                                        <i class="zmdi zmdi-edit"></i>
-                                                    </button>
-                                                    <button class="item" data-toggle="tooltip" data-placement="top" title="Delete">
-                                                        <i class="zmdi zmdi-delete"></i>
-                                                    </button>
-                                                    <button class="item" data-toggle="tooltip" data-placement="top" title="More">
-                                                        <i class="zmdi zmdi-more"></i>
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr class="spacer"></tr>
-                                        <tr class="tr-shadow">
-                                            <td>
-                                                <label class="au-checkbox">
-                                                    <input type="checkbox">
-                                                    <span class="au-checkmark"></span>
-                                                </label>
-                                            </td>
-                                            <td>Lori Lynch</td>
-                                            <td>
-                                                <span class="block-email">doe@example.com</span>
-                                            </td>
-                                            <td class="desc">Camera C430W 4k</td>
-                                            <td>2018-09-24 19:10</td>
-                                            <td>
-                                                <span class="status--process">Processed</span>
-                                            </td>
-                                            <td>$699.00</td>
-                                            <td>
-                                                <div class="table-data-feature">
-                                                    <button class="item" data-toggle="tooltip" data-placement="top" title="Send">
-                                                        <i class="zmdi zmdi-mail-send"></i>
-                                                    </button>
-                                                    <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
-                                                        <i class="zmdi zmdi-edit"></i>
-                                                    </button>
-                                                    <button class="item" data-toggle="tooltip" data-placement="top" title="Delete">
-                                                        <i class="zmdi zmdi-delete"></i>
-                                                    </button>
-                                                    <button class="item" data-toggle="tooltip" data-placement="top" title="More">
-                                                        <i class="zmdi zmdi-more"></i>
-                                                    </button>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                        @foreach (var item in Model)
+                                        {
+                                            <tr>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.FOOD_CODE)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.FOOD_NAME)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.DESCRIPTION)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.PRICE)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.IMAGE_URL)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.STATUS)
+                                                </td>
+                                                <td>
+                                                    @Html.DisplayFor(modelItem => item.CATEGORY.CATEGORY_CODE)
+                                                </td>
+                                                <td>
+                                                    @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                                                    @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                                                    @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                                                </td>
+                                            </tr>
+                                          }
+                                        </tbody>
+                                    </table>
                             </div>
                             <!-- END DATA TABLE -->
                         </div>
@@ -260,34 +121,8 @@
             </div>
         </div>
     </div>
-
-
-
-    <!-- Jquery JS-->
-    <script src="@Url.Content("~/Assets/vendor/AdminIndexVendor/jquery-3.2.1.min.js")"></script>
-    <!-- Bootstrap JS-->
-    <script src="@Url.Content("~/Assets/vendor/AdminIndexVendor/bootstrap-4.1/popper.min.js")"></script>
-    <script src="@Url.Content("~/Assets/vendor/AdminIndexVendor/bootstrap-4.1/bootstrap.min.js")"></script>
-    <!-- Vendor JS       -->
-    <script src="@Url.Content("~/Assets/vendor/AdminIndexVendor/slick/slick.min.js")">
-    </script>
-    <script src="@Url.Content("~/Assets/vendor/AdminIndexVendor/wow/wow.min.js")"></script>
-    <script src="@Url.Content("~/Assets/vendor/AdminIndexVendor/animsition/animsition.min.js")"></script>
-    <script src="@Url.Content("~/Assets/vendor/AdminIndexVendor/bootstrap-progressbar/bootstrap-progressbar.min.js")">
-    </script>
-    <script src="@Url.Content("~/Assets/vendor/AdminIndexVendor/counter-up/jquery.waypoints.min.js")"></script>
-    <script src="@Url.Content("~/Assets/vendor/AdminIndexVendor/counter-up/jquery.counterup.min.js")">
-    </script>
-    <script src="@Url.Content("~/Assets/vendor/AdminIndexVendor/circle-progress/circle-progress.min.js")"></script>
-    <script src="@Url.Content("~/Assets/vendor/AdminIndexVendor/perfect-scrollbar/perfect-scrollbar.js")"></script>
-    <script src="@Url.Content("~/Assets/vendor/AdminIndexVendor/chartjs/Chart.bundle.min.js")"></script>
-    <script src="@Url.Content("~/Assets/vendor/AdminIndexVendor/select2/select2.min.js")">
-    </script>
-
-    <!-- Main JS-->
-    <script src="@Url.Content("~/Assets/js/AdminIndexJs/main.js")"></script>
-
 </body>
-
 </html>
 <!-- end document-->
+
+

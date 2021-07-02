@@ -1,0 +1,149 @@
+﻿@using VanLangFeedBackWebsite.Models;
+@using PagedList;
+@using PagedList.Mvc;
+@model PagedList.IPagedList<CAU_HOI>
+
+<!DOCTYPE html>
+<html lang="en">
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<head>
+    <title>Câu hỏi thường gặp</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Labs - Design Studio">
+    <meta name="keywords" content="lab, onepage, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <!-- Page header -->
+    <div class="page-top-section">
+        <div class="overlay" style="background-image:url('@Url.Content("~/Assets/images/backgrounds/footerbackground.png")')"></div>
+        <div class="container text-right">
+            <div class="page-info">
+                <h2>Câu hỏi thường gặp</h2>
+                <div class="page-links">
+                    <a href="@Url.Action("Index", "Home")">Home</a>
+                    <span>Câu hỏi</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page header end-->
+    <!-- page section -->
+    <div class="page-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-7 blog-posts">
+                    @foreach (var item in Model)
+                    {
+                        <!-- Post item -->
+                        <div class="post-item">
+                            <div class="post-thumbnail">
+                                <img src="@Url.Content("~/Assets/images/blog/blog-2.jpg")" alt="">
+                                <div class="post-date">
+                                    <h2>03</h2>
+                                    <h3>Nov 2017</h3>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <h2 class="post-title">@item.CAU_HOI1</h2>
+                                <div class="post-meta">
+                                    <a href="">Ngày đăng:   @item.NGAY_TAO</a>
+                                    <a href="">Được đăng bởi:   @item.TAI_KHOAN.EMAIL</a>
+                                    <a href="">Danh mục:   @item.DANH_MUC.DANH_MUC1</a>
+                                </div>
+                                <p>@MvcHtmlString.Create(item.MO_TA)</p>
+                            </div>
+                        </div>
+                    }
+
+                    Tổng số trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount
+                    @Html.PagedListPager(Model, page => Url.Action("Index", new {page = page, category = ViewBag.category}))
+                </div>
+                <!-- Sidebar area -->
+                <div class="col-md-4 col-sm-5 sidebar">
+                    <!-- Single widget -->
+                    <div class="widget-item">
+                        <form action="@Url.Action("Search", "Questions")" method="get" class="search-form">
+                            <input type="text" name="Keyword" placeholder="Nhập câu hỏi hoặc từ khóa bạn cầm tìm">
+                            <button type="submit" class="search-btn">
+                                <i class="fab fa-searchengin"></i>
+                            </button>
+                        </form>
+                    </div>
+                    <!-- Single widget -->
+                    <div class="widget-item">
+                        <h2 class="widget-title">Danh mục</h2>
+                        @Html.Action("CategoryPartical", "Questions")
+                    </div>
+                    <!-- Single widget -->
+                    <div class="widget-item">
+                        <h2 class="widget-title">Instagram</h2>
+                        <ul class="instagram">
+                            <li><img src="@Url.Content("~/Assets/images/instagram/1.jpg")" alt=""></li>
+                            <li><img src="@Url.Content("~/Assets/images/instagram/2.jpg")" alt=""></li>
+                            <li><img src="@Url.Content("~/Assets/images/instagram/3.jpg")" alt=""></li>
+                            <li><img src="@Url.Content("~/Assets/images/instagram/4.jpg")" alt=""></li>
+                            <li><img src="@Url.Content("~/Assets/images/instagram/5.jpg")" alt=""></li>
+                            <li><img src="@Url.Content("~/Assets/images/instagram/6.jpg")" alt=""></li>
+                        </ul>
+                    </div>
+                    <!-- Single widget -->
+                    <div class="widget-item">
+                        <h2 class="widget-title">Tags</h2>
+                        <ul class="tag">
+                            <li><a href="">branding</a></li>
+                            <li><a href="">identity</a></li>
+                            <li><a href="">video</a></li>
+                            <li><a href="">design</a></li>
+                            <li><a href="">inspiration</a></li>
+                            <li><a href="">web design</a></li>
+                            <li><a href="">photography</a></li>
+                        </ul>
+                    </div>
+                    <!-- Single widget -->
+                    <div class="widget-item">
+                        <h2 class="widget-title">Quote</h2>
+                        <div class="quote">
+                            <span class="quotation">‘​‌‘​‌</span>
+                            <p>Vivamus in urna eu enim porttitor consequat. Proin vitae pulvinar libero. Proin ut hendrerit metus. Aliquam erat volutpat. Donec fermen tum convallis ante eget tristique. Sed lacinia turpis at ultricies vestibulum.</p>
+                        </div>
+                    </div>
+                    <!-- Single widget -->
+                    <div class="widget-item">
+                        <h2 class="widget-title">Add</h2>
+                        <div class="add">
+                            <a href=""><img src="@Url.Content("~/Assets/images/blog/add.jpg")" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- page section end-->
+    <!-- newsletter section -->
+    <div class="newsletter-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h2>Bản tin</h2>
+                </div>
+                <div class="col-md-9">
+                    <!-- newsletter form -->
+                    <form class="nl-form">
+                        <input type="text" placeholder="Nhập email của bạn vào trong ô này">
+                        <button class="site-btn btn-2">Gửi</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- newsletter section end-->
+    <!-- Footer section -->
+    <footer class="footer-section">
+        <h2>2021 All rights reserved. Designed by <a href="https://colorlib.com" target="_blank">SEPK24T-Team11</a></h2>
+    </footer>
+    <!-- Footer section end -->
+</body>
+</html>
