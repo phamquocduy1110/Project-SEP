@@ -1,0 +1,13 @@
+﻿@using VanLangFeedBackWebsite.Models;
+@using PagedList;
+@using PagedList.Mvc;
+@model PagedList.IPagedList<DANH_MUC>
+
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>
+            @Html.ActionLink(item.DANH_MUC1, "Index", "Questions", new { page = 1, category = @item.ID })
+        </li>
+    }
+</ul>
